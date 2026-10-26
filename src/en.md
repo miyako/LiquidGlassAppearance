@@ -48,10 +48,10 @@ The SVG component is declared as a project dependency rather than copied into th
 
 ```json
 {
-    “dependencies”: {
-        “4D SVG”: {
-            “github”: “4d/4D-SVG”,
-            “version”: “latest”
+    "dependencies": {
+        "4D SVG": {
+            "github": "4d/4D-SVG",
+            "version": "latest"
         }
     }
 }
