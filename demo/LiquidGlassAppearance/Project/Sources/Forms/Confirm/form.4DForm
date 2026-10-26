@@ -1,0 +1,151 @@
+{
+  "$4d": {
+    "version": "1",
+    "kind": "form"
+  },
+  "windowTitle": "Meridian",
+  "windowSizingX": "fixed",
+  "windowSizingY": "fixed",
+  "width": 460,
+  "height": 190,
+  "events": [
+    "onLoad",
+    "onCloseBox"
+  ],
+  "method": "method.4dm",
+  "pages": [
+    null,
+    {
+      "objects": {
+        "ground": {
+          "type": "rectangle",
+          "left": 0,
+          "top": 0,
+          "width": 460,
+          "height": 190,
+          "class": "mnWindow"
+        },
+        "canvas_light": {
+          "type": "picture",
+          "left": 0,
+          "top": 0,
+          "width": 460,
+          "height": 190,
+          "picture": "/RESOURCES/canvas-light.png",
+          "pictureFormat": "truncatedTopLeft",
+          "visibility": "hidden"
+        },
+        "canvas_dark": {
+          "type": "picture",
+          "left": 0,
+          "top": 0,
+          "width": 460,
+          "height": 190,
+          "picture": "/RESOURCES/canvas-dark.png",
+          "pictureFormat": "truncatedTopLeft",
+          "visibility": "hidden"
+        },
+        "confirmCard": {
+          "type": "rectangle",
+          "left": 16,
+          "top": 16,
+          "width": 428,
+          "height": 158,
+          "class": "mnCard"
+        },
+        "glass_confirmCard_light": {
+          "type": "picture",
+          "left": 16,
+          "top": 16,
+          "width": 428,
+          "height": 158,
+          "picture": "/RESOURCES/glass-confirmCard-light.png",
+          "pictureFormat": "scaled",
+          "visibility": "hidden"
+        },
+        "glass_confirmCard_dark": {
+          "type": "picture",
+          "left": 16,
+          "top": 16,
+          "width": 428,
+          "height": 158,
+          "picture": "/RESOURCES/glass-confirmCard-dark.png",
+          "pictureFormat": "scaled",
+          "visibility": "hidden"
+        },
+        "confirmCardRimTop": {
+          "type": "rectangle",
+          "left": 26,
+          "top": 16,
+          "width": 408,
+          "height": 1,
+          "class": "mnRimTop"
+        },
+        "confirmCardRimBottom": {
+          "type": "rectangle",
+          "left": 26,
+          "top": 173,
+          "width": 408,
+          "height": 1,
+          "class": "mnRimBottom"
+        },
+        "confirmTitle": {
+          "type": "input",
+          "left": 36,
+          "top": 36,
+          "width": 388,
+          "height": 24,
+          "class": "mnStrong",
+          "dataSource": "Form:C1466.title",
+          "dataSourceTypeHint": "text",
+          "enterable": false,
+          "borderStyle": "none",
+          "focusable": false,
+          "fill": "transparent"
+        },
+        "confirmMessage": {
+          "type": "input",
+          "left": 36,
+          "top": 68,
+          "width": 388,
+          "height": 70,
+          "class": "mnBody",
+          "dataSource": "Form:C1466.message",
+          "dataSourceTypeHint": "text",
+          "enterable": false,
+          "borderStyle": "none",
+          "focusable": false,
+          "fill": "transparent",
+          "multiline": "yes",
+          "wordwrap": "normal"
+        },
+        "confirmCancel": {
+          "type": "button",
+          "left": 228,
+          "top": 146,
+          "width": 96,
+          "height": 26,
+          "text": "Cancel",
+          "style": "regular",
+          "method": "ObjectMethods/cancel.4dm",
+          "events": [
+            "onClick"
+          ]
+        },
+        "confirmOk": {
+          "type": "button",
+          "left": 336,
+          "top": 146,
+          "width": 92,
+          "height": 26,
+          "text": "OK",
+          "style": "regular",
+          "method": "ObjectMethods/ok.4dm",
+          "events": [
+            "onClick"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "bars": [
+    {
+      "id": 1,
+      "name": "Meridian",
+      "items": [
+        {
+          "link": 32001
+        },
+        {
+          "link": 32002
+        }
+      ]
+    }
+  ],
+  "menus": [
+    {
+      "link": 32001,
+      "title": "Meridian",
+      "items": [
+        {
+          "title": "New Fleet Window",
+          "method": "MN_Launch",
+          "shortcutAccel": true,
+          "shortcutKey": "N"
+        },
+        {
+          "title": "Activity Log",
+          "method": "MN_LogShow",
+          "shortcutAccel": true,
+          "shortcutKey": "L"
+        },
+        {
+          "title": "(-",
+          "isSeparator": true
+        },
+        {
+          "title": "Quit Meridian",
+          "method": "MN_Quit",
+          "shortcutAccel": true,
+          "shortcutKey": "Q"
+        },
+        {
+          "title": "Open Project",
+          "action": "design"
+        }
+      ]
+    },
+    {
+      "link": 32002,
+      "title": "Edit",
+      "items": [
+        {
+          "title": "Undo",
+          "shortcutAccel": true,
+          "shortcutKey": "Z",
+          "action": "undo"
+        },
+        {
+          "title": "(-",
+          "isSeparator": true
+        },
+        {
+          "title": "Cut",
+          "shortcutAccel": true,
+          "shortcutKey": "X",
+          "action": "cut"
+        },
+        {
+          "title": "Copy",
+          "shortcutAccel": true,
+          "shortcutKey": "C",
+          "action": "copy"
+        },
+        {
+          "title": "Paste",
+          "shortcutAccel": true,
+          "shortcutKey": "V",
+          "action": "paste"
+        },
+        {
+          "title": "Select All",
+          "shortcutAccel": true,
+          "shortcutKey": "A",
+          "action": "selectAll"
+        }
+      ]
+    }
+  ]
+}
