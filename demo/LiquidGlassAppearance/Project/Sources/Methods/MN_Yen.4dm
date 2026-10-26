@@ -1,3 +1,3 @@
 #DECLARE($amount : Integer)->$text : Text
 
-$text:=Char(8364)+" "+MN_Money($amount)
+$text:=Char(165)+MN_Money($amount)

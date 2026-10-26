@@ -3,7 +3,7 @@
     "version": "1",
     "kind": "form"
   },
-  "windowTitle": "Activity",
+  "windowTitle": ":xliff:Log_WindowTitle",
   "windowSizingX": "fixed",
   "windowSizingY": "fixed",
   "width": 860,
@@ -170,7 +170,7 @@
               "header": {
                 "name": "logWhenH",
                 "class": "mnColumn",
-                "text": "When"
+                "text": ":xliff:Log_When"
               },
               "footer": {
                 "name": "logWhenF",
@@ -189,7 +189,7 @@
               "header": {
                 "name": "logActionH",
                 "class": "mnColumn",
-                "text": "Action"
+                "text": ":xliff:Log_Action"
               },
               "footer": {
                 "name": "logActionF",
@@ -208,7 +208,7 @@
               "header": {
                 "name": "logVesselH",
                 "class": "mnColumn",
-                "text": "Vessel"
+                "text": ":xliff:Log_Vessel"
               },
               "footer": {
                 "name": "logVesselF",
@@ -227,7 +227,7 @@
               "header": {
                 "name": "logDetailH",
                 "class": "mnColumn",
-                "text": "Detail"
+                "text": ":xliff:Log_Detail"
               },
               "footer": {
                 "name": "logDetailF",
@@ -246,7 +246,7 @@
           "top": 472,
           "width": 96,
           "height": 26,
-          "text": "Clear Log",
+          "text": ":xliff:Log_Clear",
           "style": "regular",
           "method": "ObjectMethods/clear.4dm",
           "events": [
@@ -259,7 +259,7 @@
           "top": 472,
           "width": 88,
           "height": 26,
-          "text": "Close",
+          "text": ":xliff:CommonClose",
           "style": "regular",
           "method": "ObjectMethods/close.4dm",
           "events": [

@@ -8,7 +8,7 @@ If ($row=Null)
 End if
 
 If ($row=Null)
-	Form.status:="Select a vessel in the register first, then put it on charter."
+	Form.status:=MN_Text("Main_SelectToCharter")
 	return
 End if
 
@@ -23,14 +23,14 @@ For each ($vessel; Form.fleet)
 End for each
 
 If ($found=Null)
-	Form.status:=$name+" is no longer in the fleet."
+	Form.status:=MN_Text("Main_NoLongerInFleet"; New object("name"; $name))
 	return
 End if
 
 var $was : Text:=String($found.stage)
 
 If (String($found.stage)="On charter")
-	Form.status:=$name+" is already on charter."
+	Form.status:=MN_Text("Main_AlreadyOnCharter"; New object("name"; $name))
 	return
 End if
 
@@ -40,11 +40,11 @@ var $problem : Text:=MN_FleetSave(Form.fleet)
 
 MN_View(Form)
 
-MN_Log("Chartered"; $name; "From "+$was)
+MN_Log("Chartered"; $name; MN_Text("Main_CharterFrom"; New object("was"; MN_Label("Stage"; $was))))
 
 If ($problem#"")
 	Form.status:=$problem
 	MN_Alert("Meridian"; $problem)
 Else
-	Form.status:=$name+" is now on charter."
+	Form.status:=MN_Text("Main_NowOnCharter"; New object("name"; $name))
 End if

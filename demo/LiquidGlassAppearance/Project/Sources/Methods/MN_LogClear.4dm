@@ -4,8 +4,5 @@ $removed:=MN_LogRead.length
 
 Try(MN_LogFile.setText(JSON Stringify(New collection; *)))
 
-var $noun : Text:="entries"
-If ($removed=1)
-	$noun:="entry"
-End if
-MN_Log("Cleared"; ""; "Removed "+String($removed)+" "+$noun)
+MN_Log("Cleared"; ""; MN_Text(Choose($removed=1; "Log_RemovedOne"; "Log_RemovedMany"); \
+New object("n"; $removed)))

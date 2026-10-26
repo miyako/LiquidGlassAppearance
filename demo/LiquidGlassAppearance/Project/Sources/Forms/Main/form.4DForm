@@ -162,14 +162,14 @@
           "top": 15,
           "width": 104,
           "height": 26,
-          "text": "New Charter",
+          "text": ":xliff:Main_NewCharter",
           "class": "mnBody",
           "style": "regular",
           "method": "ObjectMethods/charter.4dm",
           "events": [
             "onClick"
           ],
-          "tooltip": "Put the selected vessel on charter"
+          "tooltip": ":xliff:Main_NewCharterTip"
         },
         "searchWell": {
           "type": "rectangle",
@@ -209,7 +209,7 @@
           "dataSource": "Form:C1466.query",
           "dataSourceTypeHint": "text",
           "borderStyle": "none",
-          "placeholder": "Name, model, harbour, flag",
+          "placeholder": ":xliff:Main_SearchPlaceholder",
           "method": "ObjectMethods/search.4dm",
           "events": [
             "onAfterEdit",
@@ -316,7 +316,7 @@
           "width": 200,
           "height": 14,
           "class": "mnCaption",
-          "text": "Season"
+          "text": ":xliff:Main_Season"
         },
         "utilLabel": {
           "type": "text",
@@ -325,7 +325,7 @@
           "width": 200,
           "height": 13,
           "class": "mnLabel",
-          "text": "FLEET UTILISATION"
+          "text": ":xliff:Main_UtilLabel"
         },
         "utilValue": {
           "type": "input",
@@ -362,7 +362,7 @@
           "width": 200,
           "height": 13,
           "class": "mnLabel",
-          "text": "COMMITTED TONIGHT"
+          "text": ":xliff:Main_CommittedLabel"
         },
         "committedValue": {
           "type": "input",
@@ -446,7 +446,7 @@
               "header": {
                 "name": "colNameH",
                 "class": "mnColumn",
-                "text": "Vessel"
+                "text": ":xliff:Column_name"
               },
               "footer": {
                 "name": "colNameF",
@@ -463,7 +463,7 @@
               "header": {
                 "name": "colModelH",
                 "class": "mnColumn",
-                "text": "Model"
+                "text": ":xliff:Column_model"
               },
               "footer": {
                 "name": "colModelF",
@@ -480,7 +480,7 @@
               "header": {
                 "name": "colHarbourH",
                 "class": "mnColumn",
-                "text": "Harbour"
+                "text": ":xliff:Column_harbour"
               },
               "footer": {
                 "name": "colHarbourF",
@@ -497,7 +497,7 @@
               "header": {
                 "name": "colFlagH",
                 "class": "mnColumn",
-                "text": "Flag"
+                "text": ":xliff:Column_flag"
               },
               "footer": {
                 "name": "colFlagF",
@@ -515,7 +515,7 @@
                 "name": "colRateH",
                 "class": "mnColumn",
                 "textAlign": "right",
-                "text": "Rate / night"
+                "text": ":xliff:Column_rate"
               },
               "footer": {
                 "name": "colRateF",
@@ -533,7 +533,7 @@
               "header": {
                 "name": "colStatusH",
                 "class": "mnColumn",
-                "text": "Status"
+                "text": ":xliff:Column_status"
               },
               "footer": {
                 "name": "colStatusF",
@@ -607,7 +607,7 @@
           "width": 120,
           "height": 18,
           "class": "mnBody",
-          "text": "Model"
+          "text": ":xliff:Main_Model"
         },
         "insValue0_0": {
           "type": "input",
@@ -631,7 +631,7 @@
           "width": 120,
           "height": 18,
           "class": "mnBody",
-          "text": "Type"
+          "text": ":xliff:Main_Type"
         },
         "insValue0_1": {
           "type": "input",
@@ -663,7 +663,7 @@
           "width": 120,
           "height": 18,
           "class": "mnBody",
-          "text": "Built"
+          "text": ":xliff:Main_Built"
         },
         "insValue0_2": {
           "type": "input",
@@ -695,7 +695,7 @@
           "width": 120,
           "height": 18,
           "class": "mnBody",
-          "text": "Berths"
+          "text": ":xliff:Main_Berths"
         },
         "insValue0_3": {
           "type": "input",
@@ -727,7 +727,7 @@
           "width": 200,
           "height": 14,
           "class": "mnCaption",
-          "text": "Operations"
+          "text": ":xliff:Main_Operations"
         },
         "insCard1": {
           "type": "rectangle",
@@ -764,7 +764,7 @@
           "width": 120,
           "height": 18,
           "class": "mnBody",
-          "text": "Home port"
+          "text": ":xliff:Main_HomePort"
         },
         "insValue1_0": {
           "type": "input",
@@ -788,7 +788,7 @@
           "width": 120,
           "height": 18,
           "class": "mnBody",
-          "text": "Flag"
+          "text": ":xliff:Main_Flag"
         },
         "insValue1_1": {
           "type": "input",
@@ -820,7 +820,7 @@
           "width": 120,
           "height": 18,
           "class": "mnBody",
-          "text": "Skipper"
+          "text": ":xliff:Main_Skipper"
         },
         "insValue1_2": {
           "type": "input",
@@ -852,7 +852,7 @@
           "width": 120,
           "height": 18,
           "class": "mnBody",
-          "text": "Status"
+          "text": ":xliff:Main_Status"
         },
         "insValue1_3": {
           "type": "input",
@@ -884,7 +884,7 @@
           "width": 200,
           "height": 14,
           "class": "mnCaption",
-          "text": "Rate"
+          "text": ":xliff:Main_Rate"
         },
         "insCard2": {
           "type": "rectangle",
@@ -921,7 +921,7 @@
           "width": 120,
           "height": 18,
           "class": "mnBody",
-          "text": "Per night"
+          "text": ":xliff:Main_PerNight"
         },
         "insValue2_0": {
           "type": "input",
@@ -945,7 +945,7 @@
           "width": 120,
           "height": 18,
           "class": "mnBody",
-          "text": "Per week"
+          "text": ":xliff:Main_PerWeek"
         },
         "insValue2_1": {
           "type": "input",
@@ -977,7 +977,7 @@
           "width": 200,
           "height": 14,
           "class": "mnCaption",
-          "text": "Notes"
+          "text": ":xliff:Main_Notes"
         },
         "insCardNotes": {
           "type": "rectangle",
@@ -1043,7 +1043,7 @@
           "top": 640,
           "width": 94,
           "height": 26,
-          "text": "Add Vessel",
+          "text": ":xliff:Main_AddVessel",
           "style": "regular",
           "method": "ObjectMethods/addVessel.4dm",
           "events": [
@@ -1056,7 +1056,7 @@
           "top": 640,
           "width": 94,
           "height": 26,
-          "text": "Edit Vessel",
+          "text": ":xliff:Main_EditVessel",
           "style": "regular",
           "method": "ObjectMethods/editVessel.4dm",
           "events": [
@@ -1069,7 +1069,7 @@
           "top": 640,
           "width": 94,
           "height": 26,
-          "text": "Delete",
+          "text": ":xliff:Main_Delete",
           "style": "regular",
           "method": "ObjectMethods/deleteVessel.4dm",
           "events": [

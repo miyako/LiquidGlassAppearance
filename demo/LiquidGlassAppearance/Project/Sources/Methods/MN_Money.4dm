@@ -20,7 +20,7 @@ While ($n>0)
 		End while
 	End if
 	If (Length($text)>0)
-		$text:=$chunk+" "+$text
+		$text:=$chunk+","+$text
 	Else
 		$text:=$chunk
 	End if

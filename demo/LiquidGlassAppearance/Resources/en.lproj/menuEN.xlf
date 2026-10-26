@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="menu" source-language="en" target-language="en">
+    <body>
+      <trans-unit id="MenuItemNewFleetWindow" resname="MenuItemNewFleetWindow">
+        <source>New Fleet Window</source>
+        <target>New Fleet Window</target>
+      </trans-unit>
+      <trans-unit id="MenuItemActivityLog" resname="MenuItemActivityLog">
+        <source>Activity Log</source>
+        <target>Activity Log</target>
+      </trans-unit>
+      <trans-unit id="MenuItemQuitMeridian" resname="MenuItemQuitMeridian">
+        <source>Quit Meridian</source>
+        <target>Quit Meridian</target>
+      </trans-unit>
+      <trans-unit id="MenuItemOpenProject" resname="MenuItemOpenProject">
+        <source>Open Project</source>
+        <target>Open Project</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

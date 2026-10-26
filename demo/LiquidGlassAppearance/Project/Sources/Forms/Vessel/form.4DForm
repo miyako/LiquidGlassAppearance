@@ -3,7 +3,7 @@
     "version": "1",
     "kind": "form"
   },
-  "windowTitle": "Vessel",
+  "windowTitle": ":xliff:Vessel_WindowTitle",
   "windowSizingX": "fixed",
   "windowSizingY": "fixed",
   "width": 440,
@@ -46,7 +46,7 @@
           "width": 110,
           "height": 18,
           "class": "mnBody",
-          "text": "Name"
+          "text": ":xliff:Vessel_Name"
         },
         "in_name": {
           "type": "input",
@@ -66,7 +66,7 @@
           "width": 110,
           "height": 18,
           "class": "mnBody",
-          "text": "Model"
+          "text": ":xliff:Vessel_Model"
         },
         "in_model": {
           "type": "input",
@@ -86,18 +86,17 @@
           "width": 110,
           "height": 18,
           "class": "mnBody",
-          "text": "Type"
+          "text": ":xliff:Vessel_Type"
         },
         "in_type": {
-          "type": "input",
+          "type": "dropdown",
           "left": 140,
           "top": 122,
           "width": 276,
           "height": 24,
           "class": "mnBody",
-          "dataSource": "Form:C1466.type",
-          "dataSourceTypeHint": "text",
-          "borderStyle": "system"
+          "dataSource": "Form:C1466.typeList",
+          "dataSourceTypeHint": "object"
         },
         "lbl_harbor": {
           "type": "text",
@@ -106,7 +105,7 @@
           "width": 110,
           "height": 18,
           "class": "mnBody",
-          "text": "Home port"
+          "text": ":xliff:Vessel_HomePort"
         },
         "in_harbor": {
           "type": "input",
@@ -126,7 +125,7 @@
           "width": 110,
           "height": 18,
           "class": "mnBody",
-          "text": "Flag"
+          "text": ":xliff:Vessel_Flag"
         },
         "in_flag": {
           "type": "input",
@@ -146,7 +145,7 @@
           "width": 110,
           "height": 18,
           "class": "mnBody",
-          "text": "Skipper"
+          "text": ":xliff:Vessel_Skipper"
         },
         "in_skipper": {
           "type": "input",
@@ -166,7 +165,7 @@
           "width": 110,
           "height": 18,
           "class": "mnBody",
-          "text": "Built"
+          "text": ":xliff:Vessel_Built"
         },
         "in_year": {
           "type": "input",
@@ -186,7 +185,7 @@
           "width": 110,
           "height": 18,
           "class": "mnBody",
-          "text": "Berths"
+          "text": ":xliff:Vessel_Berths"
         },
         "in_berths": {
           "type": "input",
@@ -206,7 +205,7 @@
           "width": 110,
           "height": 18,
           "class": "mnBody",
-          "text": "Rate / night"
+          "text": ":xliff:Vessel_RateNight"
         },
         "in_rate": {
           "type": "input",
@@ -226,7 +225,7 @@
           "width": 110,
           "height": 18,
           "class": "mnBody",
-          "text": "Status"
+          "text": ":xliff:Vessel_Status"
         },
         "in_stage": {
           "type": "dropdown",
@@ -235,15 +234,8 @@
           "width": 276,
           "height": 24,
           "class": "mnBody",
-          "dataSource": "Form:C1466.stage",
-          "dataSourceTypeHint": "text",
-          "choiceList": [
-            "Available",
-            "On charter",
-            "Turnaround",
-            "In refit",
-            "Laid up"
-          ]
+          "dataSource": "Form:C1466.stageList",
+          "dataSourceTypeHint": "object"
         },
         "in_flagship": {
           "type": "checkbox",
@@ -252,7 +244,7 @@
           "width": 276,
           "height": 20,
           "class": "mnBody",
-          "text": "Flagship",
+          "text": ":xliff:Vessel_Flagship",
           "dataSource": "Form:C1466.flagship",
           "dataSourceTypeHint": "boolean"
         },
@@ -263,7 +255,7 @@
           "width": 110,
           "height": 18,
           "class": "mnBody",
-          "text": "Notes"
+          "text": ":xliff:Vessel_Notes"
         },
         "in_notes": {
           "type": "input",
@@ -298,7 +290,7 @@
           "top": 512,
           "width": 88,
           "height": 26,
-          "text": "Cancel",
+          "text": ":xliff:CommonCancel",
           "style": "regular",
           "method": "ObjectMethods/cancel.4dm",
           "events": [
@@ -311,7 +303,7 @@
           "top": 512,
           "width": 88,
           "height": 26,
-          "text": "Save",
+          "text": ":xliff:Vessel_Save",
           "style": "regular",
           "defaultButton": true,
           "method": "ObjectMethods/save.4dm",

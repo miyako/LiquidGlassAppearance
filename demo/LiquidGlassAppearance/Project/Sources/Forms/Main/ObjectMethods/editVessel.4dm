@@ -1,7 +1,7 @@
 var $row : Object:=Form.sel
 
 If ($row=Null)
-	Form.status:="Select a vessel in the register first, then edit it."
+	Form.status:=MN_Text("Main_SelectToEdit")
 	return
 End if
 
@@ -16,7 +16,7 @@ For each ($vessel; Form.fleet)
 End for each
 
 If ($found=Null)
-	Form.status:=$name+" is no longer in the fleet."
+	Form.status:=MN_Text("Main_NoLongerInFleet"; New object("name"; $name))
 	return
 End if
 
@@ -33,7 +33,7 @@ If ($renamed)
 	var $other : Object
 	For each ($other; Form.fleet)
 		If (String($other.name)=String($edited.name))
-			Form.status:="There is already a vessel called "+String($edited.name)+"."
+			Form.status:=MN_Text("Main_NameTaken"; New object("name"; String($edited.name)))
 			return
 		End if
 	End for each
@@ -41,18 +41,10 @@ End if
 
 var $changed : Text:=MN_VesselDiff($found; $edited)
 
-$found.name:=String($edited.name)
-$found.model:=String($edited.model)
-$found.type:=String($edited.type)
-$found.harbor:=String($edited.harbor)
-$found.flag:=String($edited.flag)
-$found.year:=Num($edited.year)
-$found.stage:=String($edited.stage)
-$found.skipper:=String($edited.skipper)
-$found.rate:=Num($edited.rate)
-$found.berths:=Num($edited.berths)
-$found.flagship:=($edited.flagship=True)
-$found.notes:=String($edited.notes)
+var $property : Text
+For each ($property; $edited)
+	$found[$property]:=$edited[$property]
+End for each
 
 var $problem : Text:=MN_FleetSave(Form.fleet)
 
@@ -65,5 +57,5 @@ If ($problem#"")
 	Form.status:=$problem
 	MN_Alert("Meridian"; $problem)
 Else
-	Form.status:=String($edited.name)+" updated."
+	Form.status:=MN_Text("Main_Updated"; New object("name"; String($edited.name)))
 End if

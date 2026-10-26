@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Launcher" source-language="en" target-language="en">
+    <body>
+      <trans-unit id="Launcher_Subtitle" resname="Launcher_Subtitle">
+        <source>Charter fleet register</source>
+        <target>Charter fleet register</target>
+      </trans-unit>
+      <trans-unit id="Launcher_Note" resname="Launcher_Note">
+        <source>Open the register in a window of its own. Several may be open at once.</source>
+        <target>Open the register in a window of its own. Several may be open at once.</target>
+      </trans-unit>
+      <trans-unit id="Launcher_Open" resname="Launcher_Open">
+        <source>Open Fleet Register</source>
+        <target>Open Fleet Register</target>
+      </trans-unit>
+      <trans-unit id="Launcher_Activity" resname="Launcher_Activity">
+        <source>Activity</source>
+        <target>Activity</target>
+      </trans-unit>
+      <trans-unit id="Launcher_Quit" resname="Launcher_Quit">
+        <source>Quit Meridian</source>
+        <target>Quit Meridian</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

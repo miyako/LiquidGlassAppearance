@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="messages" source-language="en" target-language="en">
+    <body>
+      <trans-unit id="Column_name" resname="Column_name">
+        <source>Vessel</source>
+        <target>Vessel</target>
+      </trans-unit>
+      <trans-unit id="Column_model" resname="Column_model">
+        <source>Model</source>
+        <target>Model</target>
+      </trans-unit>
+      <trans-unit id="Column_harbour" resname="Column_harbour">
+        <source>Harbour</source>
+        <target>Harbour</target>
+      </trans-unit>
+      <trans-unit id="Column_flag" resname="Column_flag">
+        <source>Flag</source>
+        <target>Flag</target>
+      </trans-unit>
+      <trans-unit id="Column_rate" resname="Column_rate">
+        <source>Rate / night</source>
+        <target>Rate / night</target>
+      </trans-unit>
+      <trans-unit id="Column_status" resname="Column_status">
+        <source>Status</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="Section_fleet_Title" resname="Section_fleet_Title">
+        <source>Fleet register</source>
+        <target>Fleet register</target>
+      </trans-unit>
+      <trans-unit id="Section_fleet_Subtitle" resname="Section_fleet_Subtitle">
+        <source>{n} vessels of {total} in fleet</source>
+        <target>{n} vessels of {total} in fleet</target>
+      </trans-unit>
+      <trans-unit id="Section_fleet_SubtitleQuery" resname="Section_fleet_SubtitleQuery">
+        <source>{n} of {pool} vessels matching “{query}”</source>
+        <target>{n} of {pool} vessels matching “{query}”</target>
+      </trans-unit>
+      <trans-unit id="Section_fleet_Empty" resname="Section_fleet_Empty">
+        <source>Nothing in the fleet is vessels.</source>
+        <target>Nothing in the fleet is vessels.</target>
+      </trans-unit>
+      <trans-unit id="Section_fleet_EmptyQuery" resname="Section_fleet_EmptyQuery">
+        <source>No vessels match “{query}”.</source>
+        <target>No vessels match “{query}”.</target>
+      </trans-unit>
+      <trans-unit id="Section_charters_Title" resname="Section_charters_Title">
+        <source>Charters</source>
+        <target>Charters</target>
+      </trans-unit>
+      <trans-unit id="Section_charters_Subtitle" resname="Section_charters_Subtitle">
+        <source>{n} under way of {total} in fleet</source>
+        <target>{n} under way of {total} in fleet</target>
+      </trans-unit>
+      <trans-unit id="Section_charters_SubtitleQuery" resname="Section_charters_SubtitleQuery">
+        <source>{n} of {pool} under way matching “{query}”</source>
+        <target>{n} of {pool} under way matching “{query}”</target>
+      </trans-unit>
+      <trans-unit id="Section_charters_Empty" resname="Section_charters_Empty">
+        <source>Nothing in the fleet is under way.</source>
+        <target>Nothing in the fleet is under way.</target>
+      </trans-unit>
+      <trans-unit id="Section_charters_EmptyQuery" resname="Section_charters_EmptyQuery">
+        <source>No under way match “{query}”.</source>
+        <target>No under way match “{query}”.</target>
+      </trans-unit>
+      <trans-unit id="Section_desk_Title" resname="Section_desk_Title">
+        <source>Desk</source>
+        <target>Desk</target>
+      </trans-unit>
+      <trans-unit id="Section_desk_Subtitle" resname="Section_desk_Subtitle">
+        <source>{n} ashore or in yard of {total} in fleet</source>
+        <target>{n} ashore or in yard of {total} in fleet</target>
+      </trans-unit>
+      <trans-unit id="Section_desk_SubtitleQuery" resname="Section_desk_SubtitleQuery">
+        <source>{n} of {pool} ashore or in yard matching “{query}”</source>
+        <target>{n} of {pool} ashore or in yard matching “{query}”</target>
+      </trans-unit>
+      <trans-unit id="Section_desk_Empty" resname="Section_desk_Empty">
+        <source>Nothing in the fleet is ashore or in yard.</source>
+        <target>Nothing in the fleet is ashore or in yard.</target>
+      </trans-unit>
+      <trans-unit id="Section_desk_EmptyQuery" resname="Section_desk_EmptyQuery">
+        <source>No ashore or in yard match “{query}”.</source>
+        <target>No ashore or in yard match “{query}”.</target>
+      </trans-unit>
+      <trans-unit id="Section_laidup_Title" resname="Section_laidup_Title">
+        <source>Laid up</source>
+        <target>Laid up</target>
+      </trans-unit>
+      <trans-unit id="Section_laidup_Subtitle" resname="Section_laidup_Subtitle">
+        <source>{n} out of service of {total} in fleet</source>
+        <target>{n} out of service of {total} in fleet</target>
+      </trans-unit>
+      <trans-unit id="Section_laidup_SubtitleQuery" resname="Section_laidup_SubtitleQuery">
+        <source>{n} of {pool} out of service matching “{query}”</source>
+        <target>{n} of {pool} out of service matching “{query}”</target>
+      </trans-unit>
+      <trans-unit id="Section_laidup_Empty" resname="Section_laidup_Empty">
+        <source>Nothing in the fleet is out of service.</source>
+        <target>Nothing in the fleet is out of service.</target>
+      </trans-unit>
+      <trans-unit id="Section_laidup_EmptyQuery" resname="Section_laidup_EmptyQuery">
+        <source>No out of service match “{query}”.</source>
+        <target>No out of service match “{query}”.</target>
+      </trans-unit>
+      <trans-unit id="View_StatusOne" resname="View_StatusOne">
+        <source>{title} · {n} vessel listed.</source>
+        <target>{title} · {n} vessel listed.</target>
+      </trans-unit>
+      <trans-unit id="View_StatusMany" resname="View_StatusMany">
+        <source>{title} · {n} vessels listed.</source>
+        <target>{title} · {n} vessels listed.</target>
+      </trans-unit>
+      <trans-unit id="View_UtilNote" resname="View_UtilNote">
+        <source>{n} of {total} vessels committed</source>
+        <target>{n} of {total} vessels committed</target>
+      </trans-unit>
+      <trans-unit id="View_CommittedOne" resname="View_CommittedOne">
+        <source>across {n} vessel under way</source>
+        <target>across {n} vessel under way</target>
+      </trans-unit>
+      <trans-unit id="View_CommittedMany" resname="View_CommittedMany">
+        <source>across {n} vessels under way</source>
+        <target>across {n} vessels under way</target>
+      </trans-unit>
+      <trans-unit id="View_ProvenanceCode" resname="View_ProvenanceCode">
+        <source>Fleet as MN_Fleet wrote it</source>
+        <target>Fleet as MN_Fleet wrote it</target>
+      </trans-unit>
+      <trans-unit id="View_ProvenanceSaved" resname="View_ProvenanceSaved">
+        <source>Saved in this project</source>
+        <target>Saved in this project</target>
+      </trans-unit>
+      <trans-unit id="Stage_Available" resname="Stage_Available">
+        <source>Available</source>
+        <target>Available</target>
+      </trans-unit>
+      <trans-unit id="Stage_OnCharter" resname="Stage_OnCharter">
+        <source>On charter</source>
+        <target>On charter</target>
+      </trans-unit>
+      <trans-unit id="Stage_Turnaround" resname="Stage_Turnaround">
+        <source>Turnaround</source>
+        <target>Turnaround</target>
+      </trans-unit>
+      <trans-unit id="Stage_InRefit" resname="Stage_InRefit">
+        <source>In refit</source>
+        <target>In refit</target>
+      </trans-unit>
+      <trans-unit id="Stage_LaidUp" resname="Stage_LaidUp">
+        <source>Laid up</source>
+        <target>Laid up</target>
+      </trans-unit>
+      <trans-unit id="Type_Sloop" resname="Type_Sloop">
+        <source>Sloop</source>
+        <target>Sloop</target>
+      </trans-unit>
+      <trans-unit id="Type_Catamaran" resname="Type_Catamaran">
+        <source>Catamaran</source>
+        <target>Catamaran</target>
+      </trans-unit>
+      <trans-unit id="Type_Motor" resname="Type_Motor">
+        <source>Motor</source>
+        <target>Motor</target>
+      </trans-unit>
+      <trans-unit id="Type_Ketch" resname="Type_Ketch">
+        <source>Ketch</source>
+        <target>Ketch</target>
+      </trans-unit>
+      <trans-unit id="Type_Gulet" resname="Type_Gulet">
+        <source>Gulet</source>
+        <target>Gulet</target>
+      </trans-unit>
+      <trans-unit id="Skipper_Bareboat" resname="Skipper_Bareboat">
+        <source>Bareboat</source>
+        <target>Bareboat</target>
+      </trans-unit>
+      <trans-unit id="Inspect_NoSelection" resname="Inspect_NoSelection">
+        <source>No vessel selected. Choose one in the register to see its particulars.</source>
+        <target>No vessel selected. Choose one in the register to see its particulars.</target>
+      </trans-unit>
+      <trans-unit id="Inspect_NoNotes" resname="Inspect_NoNotes">
+        <source>No operational notes on file.</source>
+        <target>No operational notes on file.</target>
+      </trans-unit>
+      <trans-unit id="Vessel_HeadingNew" resname="Vessel_HeadingNew">
+        <source>New vessel</source>
+        <target>New vessel</target>
+      </trans-unit>
+      <trans-unit id="Vessel_HeadingEdit" resname="Vessel_HeadingEdit">
+        <source>Edit vessel</source>
+        <target>Edit vessel</target>
+      </trans-unit>
+      <trans-unit id="Vessel_NeedName" resname="Vessel_NeedName">
+        <source>A vessel needs a name - it is how the register identifies it.</source>
+        <target>A vessel needs a name - it is how the register identifies it.</target>
+      </trans-unit>
+      <trans-unit id="Vessel_NegativeRate" resname="Vessel_NegativeRate">
+        <source>The nightly rate cannot be negative.</source>
+        <target>The nightly rate cannot be negative.</target>
+      </trans-unit>
+      <trans-unit id="Vessel_NeedBerth" resname="Vessel_NeedBerth">
+        <source>A vessel has at least one berth.</source>
+        <target>A vessel has at least one berth.</target>
+      </trans-unit>
+      <trans-unit id="Vessel_BadYear" resname="Vessel_BadYear">
+        <source>Built should be a year, like 2016.</source>
+        <target>Built should be a year, like 2016.</target>
+      </trans-unit>
+      <trans-unit id="Diff_Name" resname="Diff_Name">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="Diff_Model" resname="Diff_Model">
+        <source>Model</source>
+        <target>Model</target>
+      </trans-unit>
+      <trans-unit id="Diff_Type" resname="Diff_Type">
+        <source>Type</source>
+        <target>Type</target>
+      </trans-unit>
+      <trans-unit id="Diff_Harbour" resname="Diff_Harbour">
+        <source>Harbour</source>
+        <target>Harbour</target>
+      </trans-unit>
+      <trans-unit id="Diff_Flag" resname="Diff_Flag">
+        <source>Flag</source>
+        <target>Flag</target>
+      </trans-unit>
+      <trans-unit id="Diff_Skipper" resname="Diff_Skipper">
+        <source>Skipper</source>
+        <target>Skipper</target>
+      </trans-unit>
+      <trans-unit id="Diff_Status" resname="Diff_Status">
+        <source>Status</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="Diff_Year" resname="Diff_Year">
+        <source>Year</source>
+        <target>Year</target>
+      </trans-unit>
+      <trans-unit id="Diff_Berths" resname="Diff_Berths">
+        <source>Berths</source>
+        <target>Berths</target>
+      </trans-unit>
+      <trans-unit id="Diff_Rate" resname="Diff_Rate">
+        <source>Rate</source>
+        <target>Rate</target>
+      </trans-unit>
+      <trans-unit id="Diff_Flagship" resname="Diff_Flagship">
+        <source>Flagship</source>
+        <target>Flagship</target>
+      </trans-unit>
+      <trans-unit id="Diff_Notes" resname="Diff_Notes">
+        <source>Notes</source>
+        <target>Notes</target>
+      </trans-unit>
+      <trans-unit id="Diff_Changed" resname="Diff_Changed">
+        <source>{label} changed</source>
+        <target>{label} changed</target>
+      </trans-unit>
+      <trans-unit id="Diff_FromTo" resname="Diff_FromTo">
+        <source>{label} {was} to {now}</source>
+        <target>{label} {was} to {now}</target>
+      </trans-unit>
+      <trans-unit id="Diff_None" resname="Diff_None">
+        <source>No field changed</source>
+        <target>No field changed</target>
+      </trans-unit>
+      <trans-unit id="Diff_Separator" resname="Diff_Separator">
+        <source>, </source>
+        <target>, </target>
+      </trans-unit>
+      <trans-unit id="Diff_Yes" resname="Diff_Yes">
+        <source>yes</source>
+        <target>yes</target>
+      </trans-unit>
+      <trans-unit id="Diff_No" resname="Diff_No">
+        <source>no</source>
+        <target>no</target>
+      </trans-unit>
+      <trans-unit id="Diff_Blank" resname="Diff_Blank">
+        <source>blank</source>
+        <target>blank</target>
+      </trans-unit>
+      <trans-unit id="Main_AlreadyInFleet" resname="Main_AlreadyInFleet">
+        <source>{name} is already in the fleet.</source>
+        <target>{name} is already in the fleet.</target>
+      </trans-unit>
+      <trans-unit id="Main_Added" resname="Main_Added">
+        <source>{name} added to the fleet.</source>
+        <target>{name} added to the fleet.</target>
+      </trans-unit>
+      <trans-unit id="Main_SelectToCharter" resname="Main_SelectToCharter">
+        <source>Select a vessel in the register first, then put it on charter.</source>
+        <target>Select a vessel in the register first, then put it on charter.</target>
+      </trans-unit>
+      <trans-unit id="Main_NoLongerInFleet" resname="Main_NoLongerInFleet">
+        <source>{name} is no longer in the fleet.</source>
+        <target>{name} is no longer in the fleet.</target>
+      </trans-unit>
+      <trans-unit id="Main_AlreadyOnCharter" resname="Main_AlreadyOnCharter">
+        <source>{name} is already on charter.</source>
+        <target>{name} is already on charter.</target>
+      </trans-unit>
+      <trans-unit id="Main_NowOnCharter" resname="Main_NowOnCharter">
+        <source>{name} is now on charter.</source>
+        <target>{name} is now on charter.</target>
+      </trans-unit>
+      <trans-unit id="Main_CharterFrom" resname="Main_CharterFrom">
+        <source>From {was}</source>
+        <target>From {was}</target>
+      </trans-unit>
+      <trans-unit id="Main_SelectToRemove" resname="Main_SelectToRemove">
+        <source>Select a vessel in the register first, then remove it.</source>
+        <target>Select a vessel in the register first, then remove it.</target>
+      </trans-unit>
+      <trans-unit id="AlertRemoveTitle" resname="AlertRemoveTitle">
+        <source>Remove {name} from the fleet?</source>
+        <target>Remove {name} from the fleet?</target>
+      </trans-unit>
+      <trans-unit id="AlertRemoveMessage" resname="AlertRemoveMessage">
+        <source>The vessel and everything recorded against it are removed. This cannot be undone.</source>
+        <target>The vessel and everything recorded against it are removed. This cannot be undone.</target>
+      </trans-unit>
+      <trans-unit id="AlertButtonRemove" resname="AlertButtonRemove">
+        <source>Remove</source>
+        <target>Remove</target>
+      </trans-unit>
+      <trans-unit id="Main_Kept" resname="Main_Kept">
+        <source>{name} kept.</source>
+        <target>{name} kept.</target>
+      </trans-unit>
+      <trans-unit id="Main_Removed" resname="Main_Removed">
+        <source>{name} removed from the fleet.</source>
+        <target>{name} removed from the fleet.</target>
+      </trans-unit>
+      <trans-unit id="Main_SelectToEdit" resname="Main_SelectToEdit">
+        <source>Select a vessel in the register first, then edit it.</source>
+        <target>Select a vessel in the register first, then edit it.</target>
+      </trans-unit>
+      <trans-unit id="Main_NameTaken" resname="Main_NameTaken">
+        <source>There is already a vessel called {name}.</source>
+        <target>There is already a vessel called {name}.</target>
+      </trans-unit>
+      <trans-unit id="Main_Updated" resname="Main_Updated">
+        <source>{name} updated.</source>
+        <target>{name} updated.</target>
+      </trans-unit>
+      <trans-unit id="Save_NoFleet" resname="Save_NoFleet">
+        <source>There was no fleet to save.</source>
+        <target>There was no fleet to save.</target>
+      </trans-unit>
+      <trans-unit id="Save_NotWritten" resname="Save_NotWritten">
+        <source>The fleet could not be written to {where}. This change is on screen only and will not be here next time.</source>
+        <target>The fleet could not be written to {where}. This change is on screen only and will not be here next time.</target>
+      </trans-unit>
+      <trans-unit id="Save_Empty" resname="Save_Empty">
+        <source>The fleet was written to {where} but came back empty. This change is on screen only.</source>
+        <target>The fleet was written to {where} but came back empty. This change is on screen only.</target>
+      </trans-unit>
+      <trans-unit id="Save_Unreadable" resname="Save_Unreadable">
+        <source>The fleet was written to {where} but cannot be read back. This change is on screen only.</source>
+        <target>The fleet was written to {where} but cannot be read back. This change is on screen only.</target>
+      </trans-unit>
+      <trans-unit id="Save_Count" resname="Save_Count">
+        <source>The fleet was written to {where} but came back with {n} of {total} vessels.</source>
+        <target>The fleet was written to {where} but came back with {n} of {total} vessels.</target>
+      </trans-unit>
+      <trans-unit id="Log_Title" resname="Log_Title">
+        <source>Activity</source>
+        <target>Activity</target>
+      </trans-unit>
+      <trans-unit id="Log_EntriesOne" resname="Log_EntriesOne">
+        <source>{n} entry</source>
+        <target>{n} entry</target>
+      </trans-unit>
+      <trans-unit id="Log_EntriesMany" resname="Log_EntriesMany">
+        <source>{n} entries</source>
+        <target>{n} entries</target>
+      </trans-unit>
+      <trans-unit id="Log_DateTime" resname="Log_DateTime">
+        <source>{dd} {month}  {time}</source>
+        <target>{dd} {month}  {time}</target>
+      </trans-unit>
+      <trans-unit id="Month_1" resname="Month_1">
+        <source>Jan</source>
+        <target>Jan</target>
+      </trans-unit>
+      <trans-unit id="Month_2" resname="Month_2">
+        <source>Feb</source>
+        <target>Feb</target>
+      </trans-unit>
+      <trans-unit id="Month_3" resname="Month_3">
+        <source>Mar</source>
+        <target>Mar</target>
+      </trans-unit>
+      <trans-unit id="Month_4" resname="Month_4">
+        <source>Apr</source>
+        <target>Apr</target>
+      </trans-unit>
+      <trans-unit id="Month_5" resname="Month_5">
+        <source>May</source>
+        <target>May</target>
+      </trans-unit>
+      <trans-unit id="Month_6" resname="Month_6">
+        <source>Jun</source>
+        <target>Jun</target>
+      </trans-unit>
+      <trans-unit id="Month_7" resname="Month_7">
+        <source>Jul</source>
+        <target>Jul</target>
+      </trans-unit>
+      <trans-unit id="Month_8" resname="Month_8">
+        <source>Aug</source>
+        <target>Aug</target>
+      </trans-unit>
+      <trans-unit id="Month_9" resname="Month_9">
+        <source>Sep</source>
+        <target>Sep</target>
+      </trans-unit>
+      <trans-unit id="Month_10" resname="Month_10">
+        <source>Oct</source>
+        <target>Oct</target>
+      </trans-unit>
+      <trans-unit id="Month_11" resname="Month_11">
+        <source>Nov</source>
+        <target>Nov</target>
+      </trans-unit>
+      <trans-unit id="Month_12" resname="Month_12">
+        <source>Dec</source>
+        <target>Dec</target>
+      </trans-unit>
+      <trans-unit id="Action_Added" resname="Action_Added">
+        <source>Added</source>
+        <target>Added</target>
+      </trans-unit>
+      <trans-unit id="Action_Edited" resname="Action_Edited">
+        <source>Edited</source>
+        <target>Edited</target>
+      </trans-unit>
+      <trans-unit id="Action_Deleted" resname="Action_Deleted">
+        <source>Deleted</source>
+        <target>Deleted</target>
+      </trans-unit>
+      <trans-unit id="Action_Cleared" resname="Action_Cleared">
+        <source>Cleared</source>
+        <target>Cleared</target>
+      </trans-unit>
+      <trans-unit id="Action_Chartered" resname="Action_Chartered">
+        <source>Chartered</source>
+        <target>Chartered</target>
+      </trans-unit>
+      <trans-unit id="Log_RemovedOne" resname="Log_RemovedOne">
+        <source>Removed {n} entry</source>
+        <target>Removed {n} entry</target>
+      </trans-unit>
+      <trans-unit id="Log_RemovedMany" resname="Log_RemovedMany">
+        <source>Removed {n} entries</source>
+        <target>Removed {n} entries</target>
+      </trans-unit>
+      <trans-unit id="AlertNothingToClear" resname="AlertNothingToClear">
+        <source>There is nothing to clear.</source>
+        <target>There is nothing to clear.</target>
+      </trans-unit>
+      <trans-unit id="AlertClearTitle" resname="AlertClearTitle">
+        <source>Clear the activity log?</source>
+        <target>Clear the activity log?</target>
+      </trans-unit>
+      <trans-unit id="AlertClearMessageOne" resname="AlertClearMessageOne">
+        <source>This removes {n} entry and cannot be undone. A single entry recording the clearance is kept.</source>
+        <target>This removes {n} entry and cannot be undone. A single entry recording the clearance is kept.</target>
+      </trans-unit>
+      <trans-unit id="AlertClearMessageMany" resname="AlertClearMessageMany">
+        <source>This removes {n} entries and cannot be undone. A single entry recording the clearance is kept.</source>
+        <target>This removes {n} entries and cannot be undone. A single entry recording the clearance is kept.</target>
+      </trans-unit>
+      <trans-unit id="AlertButtonClear" resname="AlertButtonClear">
+        <source>Clear</source>
+        <target>Clear</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

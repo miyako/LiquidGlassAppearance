@@ -1,16 +1,22 @@
-#DECLARE($value : Variant; $kind : Text)->$text : Text
+#DECLARE($vessel : Object; $key : Text; $kind : Text)->$text : Text
+
+var $value : Variant:=$vessel[$key]
 
 Case of
+	: (($kind="local") | ($kind="long"))
+		$text:=MN_Local($vessel; $key)
+	: (($kind="Stage") | ($kind="Type"))
+		$text:=MN_Label($kind; String($value))
 	: ($kind="money")
-		$text:=MN_Euro(Num($value))
+		$text:=MN_Yen(Num($value))
 	: ($kind="number")
 		$text:=String(Int(Num($value)))
 	: ($kind="flag")
-		$text:=Choose($value=True; "yes"; "no")
+		$text:=MN_Text(Choose($value=True; "Diff_Yes"; "Diff_No"))
 	Else
 		$text:=String($value)
 End case
 
 If ($text="")
-	$text:="blank"
+	$text:=MN_Text("Diff_Blank")
 End if

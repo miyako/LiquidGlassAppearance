@@ -125,7 +125,7 @@
           "top": 146,
           "width": 96,
           "height": 26,
-          "text": "Cancel",
+          "text": ":xliff:CommonCancel",
           "style": "regular",
           "method": "ObjectMethods/cancel.4dm",
           "events": [
@@ -138,7 +138,7 @@
           "top": 146,
           "width": 92,
           "height": 26,
-          "text": "OK",
+          "text": ":xliff:CommonOK",
           "style": "regular",
           "method": "ObjectMethods/ok.4dm",
           "events": [

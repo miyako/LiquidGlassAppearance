@@ -58,7 +58,13 @@ For each ($vessel; $fleet)
 			$hit:=(Position($needle; Lowercase(String($vessel.harbor)))>0)
 		End if
 		If (Not($hit))
+			$hit:=(Position($needle; Lowercase(String($vessel.harborJa)))>0)
+		End if
+		If (Not($hit))
 			$hit:=(Position($needle; Lowercase(String($vessel.flag)))>0)
+		End if
+		If (Not($hit))
+			$hit:=(Position($needle; Lowercase(String($vessel.flagJa)))>0)
 		End if
 		If ($hit)
 			$stage:=String($vessel.stage)
@@ -72,16 +78,17 @@ For each ($vessel; $fleet)
 				"name"; String($vessel.name); \
 				"label"; String($vessel.name)+$star; \
 				"model"; String($vessel.model); \
-				"type"; String($vessel.type); \
-				"harbor"; String($vessel.harbor); \
-				"flag"; String($vessel.flag); \
+				"type"; MN_Label("Type"; String($vessel.type)); \
+				"harbor"; MN_Local($vessel; "harbor"); \
+				"flag"; MN_Local($vessel; "flag"); \
 				"year"; Num($vessel.year); \
 				"berths"; Num($vessel.berths); \
-				"skipper"; String($vessel.skipper); \
-				"stage"; $stage; \
+				"skipper"; MN_Local($vessel; "skipper"); \
+				"stage"; MN_Label("Stage"; $stage); \
+				"stageKey"; $stage; \
 				"rate"; Num($vessel.rate); \
-				"money"; MN_Euro(Num($vessel.rate)); \
-				"notes"; String($vessel.notes)))
+				"money"; MN_Yen(Num($vessel.rate)); \
+				"notes"; MN_Local($vessel; "notes")))
 		End if
 	End if
 End for each
@@ -107,12 +114,14 @@ var $chevron : Text:=Char(9652)
 If ($direction="desc")
 	$chevron:=Char(9662)
 End if
+var $title : Text
 For each ($column; MN_Column)
 	If (String($column.prop)#"")
+		$title:=MN_Text("Column_"+String($column.key))
 		If (String($column.field)=$field)
-			$data["hdr"+String($column.prop)]:=String($column.title)+"  "+$chevron
+			$data["hdr"+String($column.prop)]:=$title+"  "+$chevron
 		Else
-			$data["hdr"+String($column.prop)]:=String($column.title)
+			$data["hdr"+String($column.prop)]:=$title
 		End if
 	End if
 End for each
@@ -136,12 +145,12 @@ If ($selName#"")
 End if
 
 $data.title:=String($section.title)
-var $noun : Text:=String($section.noun)
+var $prefix : Text:="Section_"+$key+"_"
+var $values : Object:=New object("n"; $rows.length; "total"; $total; "pool"; $pool; "query"; $query)
 If ($query="")
-	$data.subtitle:=String($rows.length)+" "+$noun+" of "+String($total)+" in fleet"
+	$data.subtitle:=MN_Text($prefix+"Subtitle"; $values)
 Else
-	$data.subtitle:=String($rows.length)+" of "+String($pool)+" "+$noun+" matching " \
-		+Char(8220)+$query+Char(8221)
+	$data.subtitle:=MN_Text($prefix+"SubtitleQuery"; $values)
 End if
 
 var $committed : Integer:=0
@@ -162,13 +171,14 @@ If ($total>0)
 Else
 	$data.util:="--"
 End if
-$data.utilNote:=String($committed)+" of "+String($total)+" vessels committed"
-$data.committed:=MN_Euro($money)
-$data.committedNote:="across "+String($underway)+" "+MN_Plural($underway; "vessel")+" under way"
+$data.utilNote:=MN_Text("View_UtilNote"; New object("n"; $committed; "total"; $total))
+$data.committed:=MN_Yen($money)
+$data.committedNote:=MN_Text(Choose($underway=1; "View_CommittedOne"; "View_CommittedMany"); \
+	New object("n"; $underway))
 
-$data.provenance:="Fleet as MN_Fleet wrote it"
+$data.provenance:=MN_Text("View_ProvenanceCode")
 If ($data.stored=True)
-	$data.provenance:="Saved in this project"
+	$data.provenance:=MN_Text("View_ProvenanceSaved")
 	If (String($data.savedAt)#"")
 		$data.provenance:=$data.provenance+" "+Char(183)+" "+String($data.savedAt)
 	End if
@@ -178,11 +188,11 @@ MN_Inspect($data)
 
 If ($rows.length=0)
 	If ($query="")
-		$data.status:="Nothing in the fleet is "+$noun+"."
+		$data.status:=MN_Text($prefix+"Empty"; $values)
 	Else
-		$data.status:="No "+$noun+" match "+Char(8220)+$query+Char(8221)+"."
+		$data.status:=MN_Text($prefix+"EmptyQuery"; $values)
 	End if
 Else
-	$data.status:=String($section.title)+" "+Char(183)+" "+String($rows.length)+" " \
-		+MN_Plural($rows.length; "vessel")+" listed."
+	$values.title:=String($section.title)
+	$data.status:=MN_Text(Choose($rows.length=1; "View_StatusOne"; "View_StatusMany"); $values)
 End if

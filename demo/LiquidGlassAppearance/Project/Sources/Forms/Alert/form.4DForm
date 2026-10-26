@@ -125,7 +125,7 @@
           "top": 146,
           "width": 88,
           "height": 26,
-          "text": "OK",
+          "text": ":xliff:CommonOK",
           "style": "regular",
           "method": "ObjectMethods/ok.4dm",
           "events": [

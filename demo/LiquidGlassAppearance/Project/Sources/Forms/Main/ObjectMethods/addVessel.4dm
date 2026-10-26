@@ -9,7 +9,7 @@ var $existing : Object
 
 For each ($existing; Form.fleet)
 	If (String($existing.name)=String($vessel.name))
-		Form.status:=String($vessel.name)+" is already in the fleet."
+		Form.status:=MN_Text("Main_AlreadyInFleet"; New object("name"; String($vessel.name)))
 		return
 	End if
 End for each
@@ -27,5 +27,5 @@ If ($problem#"")
 	Form.status:=$problem
 	MN_Alert("Meridian"; $problem)
 Else
-	Form.status:=String($vessel.name)+" added to the fleet."
+	Form.status:=MN_Text("Main_Added"; New object("name"; String($vessel.name)))
 End if

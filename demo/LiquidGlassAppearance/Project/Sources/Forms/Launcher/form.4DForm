@@ -108,7 +108,7 @@
           "width": 388,
           "height": 20,
           "class": "mnSubtitle",
-          "text": "Charter fleet register"
+          "text": ":xliff:Launcher_Subtitle"
         },
         "launchNote": {
           "type": "text",
@@ -117,7 +117,7 @@
           "width": 388,
           "height": 32,
           "class": "mnCaption",
-          "text": "Open the register in a window of its own. Several may be open at once."
+          "text": ":xliff:Launcher_Note"
         },
         "openButton": {
           "type": "button",
@@ -125,7 +125,7 @@
           "top": 182,
           "width": 170,
           "height": 28,
-          "text": "Open Fleet Register",
+          "text": ":xliff:Launcher_Open",
           "style": "regular",
           "method": "ObjectMethods/open.4dm",
           "events": [
@@ -138,7 +138,7 @@
           "top": 182,
           "width": 90,
           "height": 28,
-          "text": "Activity",
+          "text": ":xliff:Launcher_Activity",
           "style": "regular",
           "method": "ObjectMethods/activity.4dm",
           "events": [
@@ -151,7 +151,7 @@
           "top": 182,
           "width": 98,
           "height": 28,
-          "text": "Quit Meridian",
+          "text": ":xliff:Launcher_Quit",
           "style": "regular",
           "method": "ObjectMethods/quit.4dm",
           "events": [

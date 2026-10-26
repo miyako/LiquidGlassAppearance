@@ -1,15 +1,15 @@
 var $row : Object:=Form.sel
 
 If ($row=Null)
-	Form.status:="Select a vessel in the register first, then remove it."
+	Form.status:=MN_Text("Main_SelectToRemove")
 	return
 End if
 
 var $name : Text:=String($row.name)
 
-If (Not(MN_Confirm("Remove "+$name+" from the fleet?"; \
-"The vessel and everything recorded against it are removed. This cannot be undone."; "Remove")))
-	Form.status:=$name+" kept."
+If (Not(MN_Confirm(MN_Text("AlertRemoveTitle"; New object("name"; $name)); \
+MN_Text("AlertRemoveMessage"); MN_Text("AlertButtonRemove"))))
+	Form.status:=MN_Text("Main_Kept"; New object("name"; $name))
 	return
 End if
 
@@ -24,7 +24,7 @@ For ($i; Form.fleet.length-1; 0; -1)
 End for
 
 If ($removed=0)
-	Form.status:=$name+" is no longer in the fleet."
+	Form.status:=MN_Text("Main_NoLongerInFleet"; New object("name"; $name))
 	return
 End if
 
@@ -39,5 +39,5 @@ If ($problem#"")
 	Form.status:=$problem
 	MN_Alert("Meridian"; $problem)
 Else
-	Form.status:=$name+" removed from the fleet."
+	Form.status:=MN_Text("Main_Removed"; New object("name"; $name))
 End if

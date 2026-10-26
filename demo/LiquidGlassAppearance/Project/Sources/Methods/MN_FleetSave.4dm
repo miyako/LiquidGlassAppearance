@@ -3,7 +3,7 @@
 $problem:=""
 
 If ($fleet=Null)
-	$problem:="There was no fleet to save."
+	$problem:=MN_Text("Save_NoFleet")
 	return
 End if
 
@@ -16,28 +16,25 @@ Try($file.parent.create())
 Try($file.setText($text))
 
 If (Not($file.exists))
-	$problem:="The fleet could not be written to "+$where+\
-		". This change is on screen only and will not be here next time."
+	$problem:=MN_Text("Save_NotWritten"; New object("where"; $where))
 	return
 End if
 
 var $back : Text:=String(Try($file.getText()))
 If ($back="")
-	$problem:="The fleet was written to "+$where+\
-		" but came back empty. This change is on screen only."
+	$problem:=MN_Text("Save_Empty"; New object("where"; $where))
 	return
 End if
 
 var $parsed : Variant:=Try(JSON Parse($back))
 If (Value type($parsed)#Is collection)
-	$problem:="The fleet was written to "+$where+\
-		" but cannot be read back. This change is on screen only."
+	$problem:=MN_Text("Save_Unreadable"; New object("where"; $where))
 	return
 End if
 
 var $saved : Collection:=$parsed
 If ($saved.length#$fleet.length)
-	$problem:="The fleet was written to "+$where+" but came back with "+\
-		String($saved.length)+" of "+String($fleet.length)+" vessels."
+	$problem:=MN_Text("Save_Count"; New object("where"; $where; \
+		"n"; $saved.length; "total"; $fleet.length))
 	return
 End if

@@ -18,7 +18,7 @@ If ($sel=Null)
 	$data.insStatus:=""
 	$data.insNight:=""
 	$data.insWeek:=""
-	$data.insNotes:="No vessel selected. Choose one in the register to see its particulars."
+	$data.insNotes:=MN_Text("Inspect_NoSelection")
 Else
 	$data.insName:=String($sel.label)
 	$data.insSub:=String($sel.model)
@@ -29,11 +29,11 @@ Else
 	$data.insHarbour:=String($sel.harbor)
 	$data.insFlag:=String($sel.flag)
 	$data.insSkipper:=String($sel.skipper)
-	$data.insStatus:=String(MN_Stage(String($sel.stage); "mark"))+"  "+String($sel.stage)
-	$data.insNight:=MN_Euro(Num($sel.rate))
-	$data.insWeek:=MN_Euro(Num($sel.rate)*7)
+	$data.insStatus:=String(MN_Stage(String($sel.stageKey); "mark"))+"  "+String($sel.stage)
+	$data.insNight:=MN_Yen(Num($sel.rate))
+	$data.insWeek:=MN_Yen(Num($sel.rate)*7)
 	$data.insNotes:=String($sel.notes)
 	If ($data.insNotes="")
-		$data.insNotes:="No operational notes on file."
+		$data.insNotes:=MN_Text("Inspect_NoNotes")
 	End if
 End if

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Vessel" source-language="en" target-language="en">
+    <body>
+      <trans-unit id="Vessel_WindowTitle" resname="Vessel_WindowTitle">
+        <source>Vessel</source>
+        <target>Vessel</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Name" resname="Vessel_Name">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Model" resname="Vessel_Model">
+        <source>Model</source>
+        <target>Model</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Type" resname="Vessel_Type">
+        <source>Type</source>
+        <target>Type</target>
+      </trans-unit>
+      <trans-unit id="Vessel_HomePort" resname="Vessel_HomePort">
+        <source>Home port</source>
+        <target>Home port</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Flag" resname="Vessel_Flag">
+        <source>Flag</source>
+        <target>Flag</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Skipper" resname="Vessel_Skipper">
+        <source>Skipper</source>
+        <target>Skipper</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Built" resname="Vessel_Built">
+        <source>Built</source>
+        <target>Built</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Berths" resname="Vessel_Berths">
+        <source>Berths</source>
+        <target>Berths</target>
+      </trans-unit>
+      <trans-unit id="Vessel_RateNight" resname="Vessel_RateNight">
+        <source>Rate / night</source>
+        <target>Rate / night</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Status" resname="Vessel_Status">
+        <source>Status</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Flagship" resname="Vessel_Flagship">
+        <source>Flagship</source>
+        <target>Flagship</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Notes" resname="Vessel_Notes">
+        <source>Notes</source>
+        <target>Notes</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Save" resname="Vessel_Save">
+        <source>Save</source>
+        <target>Save</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
