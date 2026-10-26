@@ -1,0 +1,21 @@
+One style sheet, four blocks, stated in this order
+base
+(no media query)
+Also what 4D renders before 21 R3,
+which knows no form theme.
+scheme: light
+@media (prefers-color-scheme: dark)
+2
+Uncrossed with form-theme on purpose,
+so it still applies before 21 R3.
+scheme: dark
+@media (form-theme: liquid-glass)
+Repeats block 1 exactly.
+and (prefers-color-scheme: light)
+scheme: light
+@media (form-theme: liquid-glass)
+Repeats block 2 exactly.
+and (prefers-color-scheme: dark)
+Last, so it wins on 21 R3 and R4.
+scheme: dark
+Blocks 3 and 4 are not redundant.

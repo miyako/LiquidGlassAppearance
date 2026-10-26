@@ -1,0 +1,24 @@
+Why a bound property must exist before DIALOG is called
+Open form window
+Prepare
+DIALOG
+On Load
+every displayed
+the window
+objects READ
+the form's first
+value is produced
+is created
+their data source
+event runs
+Correct
+Built in On Load instead
+The collection exists, with rows in it,
+The list box already asked, and was
+at the moment the list box asks for it.
+handed nothing. No error is raised.
+The window opens populated.
+The window simply opens empty.
+This applies to more objects than it appears to
+A collection list box, an input, and a list box COLUMN HEADER all bind at this moment.
+A header naming a property that does not exist arrives empty, exactly as an input does.

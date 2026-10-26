@@ -1,0 +1,6 @@
+Meridian
+Remove Perle Noire from the fleet?
+The vessel and everything recorded against it are removed. This
+cannot be undone.
+Cancel
+Remove

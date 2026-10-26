@@ -183,21 +183,30 @@ def is_caption(item):
     if not spans or item["x"] <= cap["min_x"] or (cap["max_size"] and max(s["size"] for s in spans) > cap["max_size"]):
         return False
     match = bool(cap["pattern"]) and bool(re.search(cap["pattern"], item["text"].strip()))
+    if cap.get("fonts"):
+        match = match or all(any(f in font_of(s) for f in cap["fonts"]) for s in spans)
     if cap["italic"]:
         return match or (is_italic(item) and (not CFG["quote"]["italic"] or bool(cap["max_size"])))
-    return match or not cap["pattern"]
+    return match or not (cap["pattern"] or cap.get("fonts"))
 
 
 def inline_md(spans):
     out = []
     for s in spans:
+        if s["text"].strip() and (s["color"] in CODE_COLORS or is_code_font(s)):
+            t = s["text"]
+            lead = t[: len(t) - len(t.lstrip())]
+            trail = t[len(t.rstrip()):]
+            out.append(f"{lead}`{t.strip()}`{trail}")
+            continue
         t = esc(s["text"])
         if t.strip() and s["color"] not in CODE_COLORS and "Bold" in font_of(s):
             lead = t[: len(t) - len(t.lstrip())]
             trail = t[len(t.rstrip()):]
             t = f"{lead}**{t.strip()}**{trail}"
         out.append(t)
-    return re.sub(r"\*\*(\s+)\*\*", r"\1", "".join(out))  # **a** **b** -> **a b**
+    md = re.sub(r"\*\*(\s+)\*\*", r"\1", "".join(out))  # **a** **b** -> **a b**
+    return re.sub(r"`(\s*)`", r"\1", md)  # `a``b` / `a` `b` -> `ab` / `a b`
 
 
 def join_lines(lines):
@@ -258,6 +267,7 @@ def extract_body(doc):
     state = {"para": [], "code": [], "bullets": [], "in_bullet": False, "table": [], "quote": [], "ruled": None}
     body_x = 72
     prev = None
+    prev_caption = None
 
     def flush_para():
         if state["para"]:
@@ -331,6 +341,7 @@ def extract_body(doc):
     skip = {p - 1 for p in CFG["skip_pages"]}
     for pno in (p for p in range(len(doc)) if p not in skip):
         for it in line_items(doc[pno]):
+            last_caption, prev_caption = prev_caption, None
             if it["kind"] == "table":
                 flush_all()
                 if it["rows"]:
@@ -371,6 +382,19 @@ def extract_body(doc):
             if is_caption(it):
                 flush_all()
                 caption = text.strip()
+                if last_caption is not None and 0 <= it["y0"] - last_caption["y1"] < CFG["paragraph"]["gap"] + 3:
+                    # a caption wrapped onto several lines
+                    i = len(out) - 1
+                    if out[i].startswith("*") and out[i].endswith("*\n"):
+                        out[i] = out[i][:-2] + " " + caption + "*\n"
+                    else:
+                        m = re.match(r"!\[(.*)\]\((fig-\d+)\)\n", out[i])
+                        if m:
+                            out[i] = f"![{m.group(1)} {caption}]({m.group(2)})\n"
+                    prev_caption = it
+                    prev = None
+                    continue
+                prev_caption = it
                 last_fig = max((i for i, o in enumerate(out) if o.startswith("![](fig-")), default=None)
                 if last_fig is not None:
                     out[last_fig] = out[last_fig].replace("![]", f"![{caption}]")
