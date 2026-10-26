@@ -1,0 +1,138 @@
+{
+  "$4d": {
+    "version": "1",
+    "kind": "form"
+  },
+  "windowTitle": "Meridian",
+  "windowSizingX": "fixed",
+  "windowSizingY": "fixed",
+  "width": 460,
+  "height": 190,
+  "events": [
+    "onLoad",
+    "onCloseBox"
+  ],
+  "method": "method.4dm",
+  "pages": [
+    null,
+    {
+      "objects": {
+        "ground": {
+          "type": "rectangle",
+          "left": 0,
+          "top": 0,
+          "width": 460,
+          "height": 190,
+          "class": "mnWindow"
+        },
+        "canvas_light": {
+          "type": "picture",
+          "left": 0,
+          "top": 0,
+          "width": 460,
+          "height": 190,
+          "picture": "/RESOURCES/canvas-light.png",
+          "pictureFormat": "truncatedTopLeft",
+          "visibility": "hidden"
+        },
+        "canvas_dark": {
+          "type": "picture",
+          "left": 0,
+          "top": 0,
+          "width": 460,
+          "height": 190,
+          "picture": "/RESOURCES/canvas-dark.png",
+          "pictureFormat": "truncatedTopLeft",
+          "visibility": "hidden"
+        },
+        "alertCard": {
+          "type": "rectangle",
+          "left": 16,
+          "top": 16,
+          "width": 428,
+          "height": 158,
+          "class": "mnCard"
+        },
+        "glass_alertCard_light": {
+          "type": "picture",
+          "left": 16,
+          "top": 16,
+          "width": 428,
+          "height": 158,
+          "picture": "/RESOURCES/glass-alertCard-light.png",
+          "pictureFormat": "scaled",
+          "visibility": "hidden"
+        },
+        "glass_alertCard_dark": {
+          "type": "picture",
+          "left": 16,
+          "top": 16,
+          "width": 428,
+          "height": 158,
+          "picture": "/RESOURCES/glass-alertCard-dark.png",
+          "pictureFormat": "scaled",
+          "visibility": "hidden"
+        },
+        "alertCardRimTop": {
+          "type": "rectangle",
+          "left": 26,
+          "top": 16,
+          "width": 408,
+          "height": 1,
+          "class": "mnRimTop"
+        },
+        "alertCardRimBottom": {
+          "type": "rectangle",
+          "left": 26,
+          "top": 173,
+          "width": 408,
+          "height": 1,
+          "class": "mnRimBottom"
+        },
+        "alertTitle": {
+          "type": "input",
+          "left": 36,
+          "top": 36,
+          "width": 388,
+          "height": 24,
+          "class": "mnStrong",
+          "dataSource": "Form:C1466.title",
+          "dataSourceTypeHint": "text",
+          "enterable": false,
+          "borderStyle": "none",
+          "focusable": false,
+          "fill": "transparent"
+        },
+        "alertMessage": {
+          "type": "input",
+          "left": 36,
+          "top": 68,
+          "width": 388,
+          "height": 70,
+          "class": "mnBody",
+          "dataSource": "Form:C1466.message",
+          "dataSourceTypeHint": "text",
+          "enterable": false,
+          "borderStyle": "none",
+          "focusable": false,
+          "fill": "transparent",
+          "multiline": "yes",
+          "wordwrap": "normal"
+        },
+        "alertOk": {
+          "type": "button",
+          "left": 340,
+          "top": 146,
+          "width": 88,
+          "height": 26,
+          "text": ":xliff:CommonOK",
+          "style": "regular",
+          "method": "ObjectMethods/ok.4dm",
+          "events": [
+            "onClick"
+          ]
+        }
+      }
+    }
+  ]
+}

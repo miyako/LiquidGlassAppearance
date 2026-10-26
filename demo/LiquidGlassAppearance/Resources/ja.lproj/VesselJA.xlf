@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Vessel" source-language="en" target-language="ja">
+    <body>
+      <trans-unit id="Vessel_WindowTitle" resname="Vessel_WindowTitle">
+        <source>Vessel</source>
+        <target>艇</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Name" resname="Vessel_Name">
+        <source>Name</source>
+        <target>艇名</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Model" resname="Vessel_Model">
+        <source>Model</source>
+        <target>モデル</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Type" resname="Vessel_Type">
+        <source>Type</source>
+        <target>タイプ</target>
+      </trans-unit>
+      <trans-unit id="Vessel_HomePort" resname="Vessel_HomePort">
+        <source>Home port</source>
+        <target>母港</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Flag" resname="Vessel_Flag">
+        <source>Flag</source>
+        <target>船籍</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Skipper" resname="Vessel_Skipper">
+        <source>Skipper</source>
+        <target>スキッパー</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Built" resname="Vessel_Built">
+        <source>Built</source>
+        <target>建造年</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Berths" resname="Vessel_Berths">
+        <source>Berths</source>
+        <target>バース数</target>
+      </trans-unit>
+      <trans-unit id="Vessel_RateNight" resname="Vessel_RateNight">
+        <source>Rate / night</source>
+        <target>1泊料金</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Status" resname="Vessel_Status">
+        <source>Status</source>
+        <target>状態</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Flagship" resname="Vessel_Flagship">
+        <source>Flagship</source>
+        <target>フラッグシップ</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Notes" resname="Vessel_Notes">
+        <source>Notes</source>
+        <target>メモ</target>
+      </trans-unit>
+      <trans-unit id="Vessel_Save" resname="Vessel_Save">
+        <source>Save</source>
+        <target>保存</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,19 @@
+Translucency without an alpha channel
+The form style sheet accepts six-digit hex and nothing else.
+So the blend is computed before the value is written:
+C = Cs x a
++ Cb x (1 − a)
+Cs the tint
+Cb the ground behind
+a the rung's alpha
+Worked example - a floating group over the dark canvas:
+tint (white)
+canvas
+a = 0.032
+result
+#1E1E1E
+#FFFFFF
+the measured rung
+#252525
+The tint flips with the scheme; the alpha does not. That is why a group reads DARKER
+than its pane in light mode and LIGHTER in dark mode, from one stored number.

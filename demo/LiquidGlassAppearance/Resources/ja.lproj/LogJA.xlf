@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Log" source-language="en" target-language="ja">
+    <body>
+      <trans-unit id="Log_WindowTitle" resname="Log_WindowTitle">
+        <source>Activity</source>
+        <target>アクティビティ</target>
+      </trans-unit>
+      <trans-unit id="Log_When" resname="Log_When">
+        <source>When</source>
+        <target>日時</target>
+      </trans-unit>
+      <trans-unit id="Log_Action" resname="Log_Action">
+        <source>Action</source>
+        <target>操作</target>
+      </trans-unit>
+      <trans-unit id="Log_Vessel" resname="Log_Vessel">
+        <source>Vessel</source>
+        <target>艇名</target>
+      </trans-unit>
+      <trans-unit id="Log_Detail" resname="Log_Detail">
+        <source>Detail</source>
+        <target>詳細</target>
+      </trans-unit>
+      <trans-unit id="Log_Clear" resname="Log_Clear">
+        <source>Clear Log</source>
+        <target>ログを消去</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

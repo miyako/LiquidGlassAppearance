@@ -1,0 +1,21 @@
+1つのスタイルシートに4つのブロックを、この順序で記述する
+ベース
+（メディアクエリなし）
+21 R3より前の4Dが描画するのもこれ。
+フォームテーマを知らないため。
+scheme: light
+@media (prefers-color-scheme: dark)
+2
+あえてform-themeと組み合わせない。
+21 R3より前でも適用されるように。
+scheme: dark
+@media (form-theme: liquid-glass)
+ブロック1をそのまま繰り返す。
+and (prefers-color-scheme: light)
+scheme: light
+@media (form-theme: liquid-glass)
+ブロック2をそのまま繰り返す。
+and (prefers-color-scheme: dark)
+最後に置くので21 R3とR4で優先される。
+scheme: dark
+ブロック3と4は冗長ではない。

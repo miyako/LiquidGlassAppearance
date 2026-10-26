@@ -1,0 +1,90 @@
+{
+  "bars": [
+    {
+      "id": 1,
+      "name": "Meridian",
+      "items": [
+        {
+          "link": 32001
+        },
+        {
+          "link": 32002
+        }
+      ]
+    }
+  ],
+  "menus": [
+    {
+      "link": 32001,
+      "title": "Meridian",
+      "items": [
+        {
+          "title": ":xliff:MenuItemNewFleetWindow",
+          "method": "MN_Launch",
+          "shortcutAccel": true,
+          "shortcutKey": "N"
+        },
+        {
+          "title": ":xliff:MenuItemActivityLog",
+          "method": "MN_LogShow",
+          "shortcutAccel": true,
+          "shortcutKey": "L"
+        },
+        {
+          "title": "(-",
+          "isSeparator": true
+        },
+        {
+          "title": ":xliff:MenuItemQuitMeridian",
+          "method": "MN_Quit",
+          "shortcutAccel": true,
+          "shortcutKey": "Q"
+        },
+        {
+          "title": ":xliff:MenuItemOpenProject",
+          "action": "design"
+        }
+      ]
+    },
+    {
+      "link": 32002,
+      "title": ":xliff:CommonMenuEdit",
+      "items": [
+        {
+          "title": ":xliff:CommonMenuItemUndo",
+          "shortcutAccel": true,
+          "shortcutKey": "Z",
+          "action": "undo"
+        },
+        {
+          "title": "(-",
+          "isSeparator": true
+        },
+        {
+          "title": ":xliff:CommonMenuItemCut",
+          "shortcutAccel": true,
+          "shortcutKey": "X",
+          "action": "cut"
+        },
+        {
+          "title": ":xliff:CommonMenuItemCopy",
+          "shortcutAccel": true,
+          "shortcutKey": "C",
+          "action": "copy"
+        },
+        {
+          "title": ":xliff:CommonMenuItemPaste",
+          "shortcutAccel": true,
+          "shortcutKey": "V",
+          "action": "paste"
+        },
+        {
+          "title": ":xliff:CommonMenuItemSelectAll",
+          "shortcutAccel": true,
+          "shortcutKey": "A",
+          "action": "selectAll"
+        }
+      ]
+    }
+  ]
+}

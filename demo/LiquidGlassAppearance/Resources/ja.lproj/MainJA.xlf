@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Main" source-language="en" target-language="ja">
+    <body>
+      <trans-unit id="Main_NewCharter" resname="Main_NewCharter">
+        <source>New Charter</source>
+        <target>新規チャーター</target>
+      </trans-unit>
+      <trans-unit id="Main_NewCharterTip" resname="Main_NewCharterTip">
+        <source>Put the selected vessel on charter</source>
+        <target>選択した艇をチャーターに出します</target>
+      </trans-unit>
+      <trans-unit id="Main_SearchPlaceholder" resname="Main_SearchPlaceholder">
+        <source>Name, model, harbour, flag</source>
+        <target>艇名、モデル、母港、船籍</target>
+      </trans-unit>
+      <trans-unit id="Main_Season" resname="Main_Season">
+        <source>Season</source>
+        <target>シーズン</target>
+      </trans-unit>
+      <trans-unit id="Main_UtilLabel" resname="Main_UtilLabel">
+        <source>FLEET UTILISATION</source>
+        <target>船団稼働率</target>
+      </trans-unit>
+      <trans-unit id="Main_CommittedLabel" resname="Main_CommittedLabel">
+        <source>COMMITTED TONIGHT</source>
+        <target>今夜の確定額</target>
+      </trans-unit>
+      <trans-unit id="Main_Model" resname="Main_Model">
+        <source>Model</source>
+        <target>モデル</target>
+      </trans-unit>
+      <trans-unit id="Main_Type" resname="Main_Type">
+        <source>Type</source>
+        <target>タイプ</target>
+      </trans-unit>
+      <trans-unit id="Main_Built" resname="Main_Built">
+        <source>Built</source>
+        <target>建造年</target>
+      </trans-unit>
+      <trans-unit id="Main_Berths" resname="Main_Berths">
+        <source>Berths</source>
+        <target>バース数</target>
+      </trans-unit>
+      <trans-unit id="Main_Operations" resname="Main_Operations">
+        <source>Operations</source>
+        <target>運航</target>
+      </trans-unit>
+      <trans-unit id="Main_HomePort" resname="Main_HomePort">
+        <source>Home port</source>
+        <target>母港</target>
+      </trans-unit>
+      <trans-unit id="Main_Flag" resname="Main_Flag">
+        <source>Flag</source>
+        <target>船籍</target>
+      </trans-unit>
+      <trans-unit id="Main_Skipper" resname="Main_Skipper">
+        <source>Skipper</source>
+        <target>スキッパー</target>
+      </trans-unit>
+      <trans-unit id="Main_Status" resname="Main_Status">
+        <source>Status</source>
+        <target>状態</target>
+      </trans-unit>
+      <trans-unit id="Main_Rate" resname="Main_Rate">
+        <source>Rate</source>
+        <target>料金</target>
+      </trans-unit>
+      <trans-unit id="Main_PerNight" resname="Main_PerNight">
+        <source>Per night</source>
+        <target>1泊</target>
+      </trans-unit>
+      <trans-unit id="Main_PerWeek" resname="Main_PerWeek">
+        <source>Per week</source>
+        <target>1週間</target>
+      </trans-unit>
+      <trans-unit id="Main_Notes" resname="Main_Notes">
+        <source>Notes</source>
+        <target>メモ</target>
+      </trans-unit>
+      <trans-unit id="Main_AddVessel" resname="Main_AddVessel">
+        <source>Add Vessel</source>
+        <target>艇を追加</target>
+      </trans-unit>
+      <trans-unit id="Main_EditVessel" resname="Main_EditVessel">
+        <source>Edit Vessel</source>
+        <target>艇を編集</target>
+      </trans-unit>
+      <trans-unit id="Main_Delete" resname="Main_Delete">
+        <source>Delete</source>
+        <target>削除</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

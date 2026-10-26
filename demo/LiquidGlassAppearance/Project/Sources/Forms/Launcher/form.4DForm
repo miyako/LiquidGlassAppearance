@@ -1,0 +1,165 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowTitle": "Meridian",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 460,
+	"height": 260,
+	"events": [
+		"onLoad",
+		"onActivate",
+		"onTimer",
+		"onOutsideCall",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ground": {
+					"type": "rectangle",
+					"left": 0,
+					"top": 0,
+					"width": 460,
+					"height": 260,
+					"class": "mnWindow"
+				},
+				"canvas_light": {
+					"type": "picture",
+					"left": 0,
+					"top": 0,
+					"width": 460,
+					"height": 260,
+					"picture": "/RESOURCES/canvas-light.png",
+					"pictureFormat": "truncatedTopLeft",
+					"visibility": "hidden"
+				},
+				"canvas_dark": {
+					"type": "picture",
+					"left": 0,
+					"top": 0,
+					"width": 460,
+					"height": 260,
+					"picture": "/RESOURCES/canvas-dark.png",
+					"pictureFormat": "truncatedTopLeft",
+					"visibility": "hidden"
+				},
+				"launchCard": {
+					"type": "rectangle",
+					"left": 16,
+					"top": 16,
+					"width": 428,
+					"height": 228,
+					"class": "mnCard"
+				},
+				"glass_launchCard_light": {
+					"type": "picture",
+					"left": 16,
+					"top": 16,
+					"width": 428,
+					"height": 228,
+					"picture": "/RESOURCES/glass-launchCard-light.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"glass_launchCard_dark": {
+					"type": "picture",
+					"left": 16,
+					"top": 16,
+					"width": 428,
+					"height": 228,
+					"picture": "/RESOURCES/glass-launchCard-dark.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"launchCardRimTop": {
+					"type": "rectangle",
+					"left": 26,
+					"top": 16,
+					"width": 408,
+					"height": 1,
+					"class": "mnRimTop"
+				},
+				"launchCardRimBottom": {
+					"type": "rectangle",
+					"left": 26,
+					"top": 243,
+					"width": 408,
+					"height": 1,
+					"class": "mnRimBottom"
+				},
+				"launchTitle": {
+					"type": "text",
+					"left": 36,
+					"top": 40,
+					"width": 388,
+					"height": 28,
+					"class": "mnStrong",
+					"text": "Meridian"
+				},
+				"launchSubtitle": {
+					"type": "text",
+					"left": 36,
+					"top": 74,
+					"width": 388,
+					"height": 20,
+					"class": "mnSubtitle",
+					"text": ":xliff:Launcher_Subtitle"
+				},
+				"launchNote": {
+					"type": "text",
+					"left": 36,
+					"top": 106,
+					"width": 388,
+					"height": 32,
+					"class": "mnCaption",
+					"text": ":xliff:Launcher_Note"
+				},
+				"openButton": {
+					"type": "button",
+					"left": 36,
+					"top": 182,
+					"width": 140,
+					"height": 28,
+					"text": ":xliff:Launcher_Open",
+					"style": "regular",
+					"method": "ObjectMethods/open.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"activityButton": {
+					"type": "button",
+					"left": 182,
+					"top": 182,
+					"width": 120,
+					"height": 28,
+					"text": ":xliff:Launcher_Activity",
+					"style": "regular",
+					"method": "ObjectMethods/activity.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"quitButton": {
+					"type": "button",
+					"left": 310,
+					"top": 182,
+					"width": 118,
+					"height": 28,
+					"text": ":xliff:Launcher_Quit",
+					"style": "regular",
+					"method": "ObjectMethods/quit.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 13
+}

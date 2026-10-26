@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Launcher" source-language="en" target-language="ja">
+    <body>
+      <trans-unit id="Launcher_Subtitle" resname="Launcher_Subtitle">
+        <source>Charter fleet register</source>
+        <target>チャーター船団台帳</target>
+      </trans-unit>
+      <trans-unit id="Launcher_Note" resname="Launcher_Note">
+        <source>Open the register in a window of its own. Several may be open at once.</source>
+        <target>台帳を専用のウィンドウで開きます。複数のウィンドウを同時に開けます。</target>
+      </trans-unit>
+      <trans-unit id="Launcher_Open" resname="Launcher_Open">
+        <source>Open Fleet Register</source>
+        <target>船団台帳を開く</target>
+      </trans-unit>
+      <trans-unit id="Launcher_Activity" resname="Launcher_Activity">
+        <source>Activity</source>
+        <target>アクティビティ</target>
+      </trans-unit>
+      <trans-unit id="Launcher_Quit" resname="Launcher_Quit">
+        <source>Quit Meridian</source>
+        <target>Meridianを終了</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

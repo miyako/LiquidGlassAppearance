@@ -1,0 +1,189 @@
+/* Meridian4D - the whole design, generated. DO NOT HAND-EDIT THIS FILE.
+
+   Every value below is rendered from reference/measured.json by MN_CssBuild. Nothing here was
+   typed by a person: a hex in this file that is not in that one is a bug in the generator, and
+   MN_Audit fails the build if the two ever disagree. To change a colour or a size, change the
+   measurement and run MN_CssMake.
+
+   FOUR BLOCKS, AND THE ORDER MATTERS. 4D understands two media grammars, and on 21 R3/R4 a
+   liquid-glass block outranks a bare prefers-color-scheme block - so the same values are stated
+   twice, and the liquid-glass pair comes last. Blocks 1 and 2 alone would render unthemed on
+   this build; blocks 3 and 4 alone would render unthemed on anything older.
+
+   NO ALPHA, AT ANY SYNTAX, AND NO UNITS. 4D's form-CSS parser takes 6-digit hex and nothing else
+   - rgba(), hsla() and 8-digit hex do not fail loudly, they silently truncate every rule after
+   them. Lengths are unitless, and a `px` is error 555 and fatal. The macOS label colours carry
+   alpha, so measured.json stores them already composited over their own ground.
+
+   The classes are named for the ROLE each plays in the window, never for the colour it currently
+   is. What each one is for is written beside it below.
+*/
+
+/* ---- BASE = light ------------------------------------------------------------------------------ */
+/*
+   Also what 4D renders before 21 R3, which knows no form theme at all.
+*/
+.mnWindow    { fill: #FFFFFF; stroke: #FFFFFF; }
+.mnChrome    { fill: #ECECEC; stroke: #ECECEC; }
+.mnRule      { fill: #F4F4F4; stroke: #F4F4F4; }
+.mnRimTop    { fill: #FBFBFB; stroke: #FBFBFB; }
+.mnRimBottom { fill: #DEDEDE; stroke: #DEDEDE; }
+.mnCardRule  { fill: #ECECEC; stroke: #ECECEC; }
+.mnTitle     { stroke: #272727; fontSize: 17; }
+.mnSubtitle  { stroke: #808080; fontSize: 11; }
+.mnHeading   { stroke: #272727; fontSize: 13; fontWeight: bold; }
+.mnBody      { stroke: #272727; fontSize: 13; }
+.mnSecondary { stroke: #808080; fontSize: 13; }
+.mnTertiary  { stroke: #BDBDBD; fontSize: 13; }
+.mnCaption   { stroke: #808080; fontSize: 10; }
+.mnLabel     { stroke: #808080; fontSize: 10; fontWeight: bold; }
+.mnFigure    { stroke: #272727; fontSize: 17; }
+.mnColumn    { stroke: #808080; fontSize: 11; }
+.mnAccent    { stroke: #3D637D; fontSize: 13; }
+.mnStrong    { stroke: #272727; fontSize: 17; fontWeight: bold; }
+.mnRegister  { alternateFill: #F4F5F5; horizontalLineStroke: transparent; verticalLineStroke: transparent; }
+.mnNav       { stroke: #272727; fontSize: 13; horizontalLineStroke: #ECECEC; verticalLineStroke: transparent; }
+.mnInspector { fill: #FFFFFF; stroke: #FFFFFF; }
+.mnCard      { fill: #F7F7F7; stroke: #F7F7F7; borderRadius: 10; }
+
+/* ---- dark -------------------------------------------------------------------------------------- */
+/*
+   Uncrossed with form-theme on purpose, so it still applies pre-21 R3.
+*/
+@media (prefers-color-scheme: dark) {
+  .mnWindow    { fill: #1E1E1E; stroke: #1E1E1E; }
+  .mnChrome    { fill: #2F2F2F; stroke: #2F2F2F; }
+  .mnRule      { fill: #282828; stroke: #282828; }
+  .mnRimTop    { fill: #929292; stroke: #929292; }
+  .mnRimBottom { fill: #161616; stroke: #161616; }
+  .mnCardRule  { fill: #2E2E2E; stroke: #2E2E2E; }
+  .mnTitle     { stroke: #DDDDDD; fontSize: 17; }
+  .mnSubtitle  { stroke: #9A9A9A; fontSize: 11; }
+  .mnHeading   { stroke: #DDDDDD; fontSize: 13; fontWeight: bold; }
+  .mnBody      { stroke: #DDDDDD; fontSize: 13; }
+  .mnSecondary { stroke: #9A9A9A; fontSize: 13; }
+  .mnTertiary  { stroke: #565656; fontSize: 13; }
+  .mnCaption   { stroke: #9A9A9A; fontSize: 10; }
+  .mnLabel     { stroke: #9A9A9A; fontSize: 10; fontWeight: bold; }
+  .mnFigure    { stroke: #DDDDDD; fontSize: 17; }
+  .mnColumn    { stroke: #9A9A9A; fontSize: 11; }
+  .mnAccent    { stroke: #507791; fontSize: 13; }
+  .mnStrong    { stroke: #DDDDDD; fontSize: 17; fontWeight: bold; }
+  .mnRegister  { alternateFill: #292929; horizontalLineStroke: transparent; verticalLineStroke: transparent; }
+  .mnNav       { stroke: #DDDDDD; fontSize: 13; horizontalLineStroke: #2E2E2E; verticalLineStroke: transparent; }
+  .mnInspector { fill: #1E1E1E; stroke: #1E1E1E; }
+  .mnCard      { fill: #252525; stroke: #252525; borderRadius: 10; }
+}
+
+/* ---- light, again, verbatim -------------------------------------------------------------------- */
+/*
+   On 21 R3/R4 the liquid-glass theme is live and outranks the two blocks above. Without this
+   pair the window renders unthemed there; without the pair above it renders unthemed on anything
+   older. Same values, stated twice, which is what the generator is for.
+*/
+@media (form-theme: liquid-glass) and (prefers-color-scheme: light) {
+  .mnWindow    { fill: #FFFFFF; stroke: #FFFFFF; }
+  .mnChrome    { fill: #ECECEC; stroke: #ECECEC; }
+  .mnRule      { fill: #F4F4F4; stroke: #F4F4F4; }
+  .mnRimTop    { fill: #FBFBFB; stroke: #FBFBFB; }
+  .mnRimBottom { fill: #DEDEDE; stroke: #DEDEDE; }
+  .mnCardRule  { fill: #ECECEC; stroke: #ECECEC; }
+  .mnTitle     { stroke: #272727; fontSize: 17; }
+  .mnSubtitle  { stroke: #808080; fontSize: 11; }
+  .mnHeading   { stroke: #272727; fontSize: 13; fontWeight: bold; }
+  .mnBody      { stroke: #272727; fontSize: 13; }
+  .mnSecondary { stroke: #808080; fontSize: 13; }
+  .mnTertiary  { stroke: #BDBDBD; fontSize: 13; }
+  .mnCaption   { stroke: #808080; fontSize: 10; }
+  .mnLabel     { stroke: #808080; fontSize: 10; fontWeight: bold; }
+  .mnFigure    { stroke: #272727; fontSize: 17; }
+  .mnColumn    { stroke: #808080; fontSize: 11; }
+  .mnAccent    { stroke: #3D637D; fontSize: 13; }
+  .mnStrong    { stroke: #272727; fontSize: 17; fontWeight: bold; }
+  .mnRegister  { alternateFill: #F4F5F5; horizontalLineStroke: transparent; verticalLineStroke: transparent; }
+  .mnNav       { stroke: #272727; fontSize: 13; horizontalLineStroke: #ECECEC; verticalLineStroke: transparent; }
+  .mnInspector { fill: #FFFFFF; stroke: #FFFFFF; }
+  .mnCard      { fill: #F7F7F7; stroke: #F7F7F7; borderRadius: 10; }
+}
+
+/* ---- dark, again, verbatim --------------------------------------------------------------------- */
+/*
+   Last, so it wins.
+*/
+@media (form-theme: liquid-glass) and (prefers-color-scheme: dark) {
+  .mnWindow    { fill: #1E1E1E; stroke: #1E1E1E; }
+  .mnChrome    { fill: #2F2F2F; stroke: #2F2F2F; }
+  .mnRule      { fill: #282828; stroke: #282828; }
+  .mnRimTop    { fill: #929292; stroke: #929292; }
+  .mnRimBottom { fill: #161616; stroke: #161616; }
+  .mnCardRule  { fill: #2E2E2E; stroke: #2E2E2E; }
+  .mnTitle     { stroke: #DDDDDD; fontSize: 17; }
+  .mnSubtitle  { stroke: #9A9A9A; fontSize: 11; }
+  .mnHeading   { stroke: #DDDDDD; fontSize: 13; fontWeight: bold; }
+  .mnBody      { stroke: #DDDDDD; fontSize: 13; }
+  .mnSecondary { stroke: #9A9A9A; fontSize: 13; }
+  .mnTertiary  { stroke: #565656; fontSize: 13; }
+  .mnCaption   { stroke: #9A9A9A; fontSize: 10; }
+  .mnLabel     { stroke: #9A9A9A; fontSize: 10; fontWeight: bold; }
+  .mnFigure    { stroke: #DDDDDD; fontSize: 17; }
+  .mnColumn    { stroke: #9A9A9A; fontSize: 11; }
+  .mnAccent    { stroke: #507791; fontSize: 13; }
+  .mnStrong    { stroke: #DDDDDD; fontSize: 17; fontWeight: bold; }
+  .mnRegister  { alternateFill: #292929; horizontalLineStroke: transparent; verticalLineStroke: transparent; }
+  .mnNav       { stroke: #DDDDDD; fontSize: 13; horizontalLineStroke: #2E2E2E; verticalLineStroke: transparent; }
+  .mnInspector { fill: #1E1E1E; stroke: #1E1E1E; }
+  .mnCard      { fill: #252525; stroke: #252525; borderRadius: 10; }
+}
+
+/* ---- what each class is for --------------------------------------------------------------- */
+/*
+   .mnWindow    the window ground: the register, the inspector, anything not the sidebar
+   .mnChrome    THE NAVIGATION LAYER - the sidebar and the header band. One rung below the
+                canvas. The native one is vibrancy and samples the DESKTOP, so this is frozen
+                at the rung measured over a black desktop - close there, visibly different
+                over a bright one
+   .mnRule      a hairline ON THE CANVAS: pane boundaries, the band under the column headers
+   .mnRimTop    the light inlet: a 1px bevel along a group's top edge, where overhead light
+                catches the rim. Without it a translucent surface has no boundary and blends
+                into what is behind it
+   .mnRimBottom the contact shadow inside the glass's own thickness, along a group's bottom
+                edge
+   .mnCardRule  a hairline INSIDE a group, which sits a rung higher than the canvas and so
+                needs its own tone. One hairline colour for both would be visibly wrong on one
+                of them
+   .mnTitle     the window title - the section's name
+   .mnSubtitle  the window subtitle - the count and its noun
+   .mnHeading   a vessel's name, in the register and at the head of the inspector
+   .mnBody      ordinary text: cells, inspector values
+   .mnSecondary text that is present but not the point: inspector field labels, an uncommitted
+                status
+   .mnTertiary  the faintest rank: the flagship mark, a placeholder
+   .mnCaption   the detail line under each sidebar figure, and the provenance line at its foot
+   .mnLabel     the small heading over a sidebar figure. SECONDARY and bold, not tertiary: the
+                native app sets these tertiary and gets away with it on a pale vibrant
+                sidebar, but over glass tertiary lands within a few percent of the panel
+                itself and the words disappear. The weight is what keeps them subordinate to
+                the figure without hiding them. 4D has no textCase, so the CAPITALS are in the
+                string; no tracking either, so the widened letter-spacing is simply lost
+   .mnFigure    the two figures a charter desk reads first. The native face is rounded with
+                monospaced digits; 4D reaches neither, so this is the size and the colour and
+                nothing else
+   .mnColumn    a column header in the register
+   .mnAccent    the one state that takes the accent - see MN_Stage. Text only: this colour has
+                not been checked as a ground under a white label
+   .mnStrong    the vessel's name at the head of the inspector - title2, and the only bold at
+                that size
+   .mnRegister  the register list box. alternateFill paints every other row and NO rules are
+                drawn: a macOS inset table separates rows by that fill, not by a grid. No
+                `fill` either - one on a list box kills row painting outright - and the
+                selection is left to 4D, which paints it in the user's own accent
+   .mnNav       the sidebar's section list. Hairlines BETWEEN rows and none down the middle,
+                so it reads as one card of sections rather than a two-column table - the same
+                treatment the inspector's groups get, which is where the look comes from
+   .mnInspector the inspector pane is CANVAS, not chrome. Liquid Glass belongs on the
+                navigation and control layer; the canvas is what shows through it, so it stays
+                the window's own ground
+   .mnCard      a floating group - an inspector section, the sidebar's section list. One glass
+                rung above the canvas it sits on. The radius is measured, and unitless because
+                a unit here is error 555 and fatal
+*/

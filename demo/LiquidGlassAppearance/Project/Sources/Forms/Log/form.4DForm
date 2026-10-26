@@ -1,0 +1,272 @@
+{
+  "$4d": {
+    "version": "1",
+    "kind": "form"
+  },
+  "windowTitle": ":xliff:Log_WindowTitle",
+  "windowSizingX": "fixed",
+  "windowSizingY": "fixed",
+  "width": 860,
+  "height": 520,
+  "events": [
+    "onLoad",
+    "onActivate",
+    "onTimer",
+    "onOutsideCall",
+    "onCloseBox"
+  ],
+  "method": "method.4dm",
+  "pages": [
+    null,
+    {
+      "objects": {
+        "ground": {
+          "type": "rectangle",
+          "left": 0,
+          "top": 0,
+          "width": 860,
+          "height": 520,
+          "class": "mnWindow"
+        },
+        "canvas_light": {
+          "type": "picture",
+          "left": 0,
+          "top": 0,
+          "width": 860,
+          "height": 520,
+          "picture": "/RESOURCES/canvas-light.png",
+          "pictureFormat": "truncatedTopLeft",
+          "visibility": "hidden"
+        },
+        "canvas_dark": {
+          "type": "picture",
+          "left": 0,
+          "top": 0,
+          "width": 860,
+          "height": 520,
+          "picture": "/RESOURCES/canvas-dark.png",
+          "pictureFormat": "truncatedTopLeft",
+          "visibility": "hidden"
+        },
+        "logCard": {
+          "type": "rectangle",
+          "left": 16,
+          "top": 16,
+          "width": 828,
+          "height": 488,
+          "class": "mnCard"
+        },
+        "glass_logCard_light": {
+          "type": "picture",
+          "left": 16,
+          "top": 16,
+          "width": 828,
+          "height": 488,
+          "picture": "/RESOURCES/glass-logCard-light.png",
+          "pictureFormat": "scaled",
+          "visibility": "hidden"
+        },
+        "glass_logCard_dark": {
+          "type": "picture",
+          "left": 16,
+          "top": 16,
+          "width": 828,
+          "height": 488,
+          "picture": "/RESOURCES/glass-logCard-dark.png",
+          "pictureFormat": "scaled",
+          "visibility": "hidden"
+        },
+        "logCardRimTop": {
+          "type": "rectangle",
+          "left": 26,
+          "top": 16,
+          "width": 808,
+          "height": 1,
+          "class": "mnRimTop"
+        },
+        "logCardRimBottom": {
+          "type": "rectangle",
+          "left": 26,
+          "top": 503,
+          "width": 808,
+          "height": 1,
+          "class": "mnRimBottom"
+        },
+        "logTitle": {
+          "type": "input",
+          "left": 36,
+          "top": 36,
+          "width": 520,
+          "height": 26,
+          "class": "mnStrong",
+          "dataSource": "Form:C1466.title",
+          "dataSourceTypeHint": "text",
+          "enterable": false,
+          "borderStyle": "none",
+          "focusable": false,
+          "fill": "transparent"
+        },
+        "logSubtitle": {
+          "type": "input",
+          "left": 36,
+          "top": 68,
+          "width": 520,
+          "height": 18,
+          "class": "mnSubtitle",
+          "dataSource": "Form:C1466.subtitle",
+          "dataSourceTypeHint": "text",
+          "enterable": false,
+          "borderStyle": "none",
+          "focusable": false,
+          "fill": "transparent"
+        },
+        "logList": {
+          "type": "listbox",
+          "listboxType": "collection",
+          "left": 32,
+          "top": 104,
+          "width": 796,
+          "height": 356,
+          "class": "mnRegister",
+          "dataSource": "Form:C1466.entries",
+          "rowHeight": "24px",
+          "headerHeight": "28px",
+          "footerHeight": "0px",
+          "showHeaders": true,
+          "showFooters": false,
+          "hideFocusRing": true,
+          "hideExtraBlankRows": true,
+          "selectionMode": "none",
+          "borderStyle": "none",
+          "scrollbarHorizontal": "hidden",
+          "scrollbarVertical": "automatic",
+          "columns": [
+            {
+              "name": "logMark",
+              "dataSource": "This.mark",
+              "dataSourceTypeHint": "text",
+              "width": 30,
+              "enterable": false,
+              "class": "mnTertiary",
+              "header": {
+                "name": "logMarkH",
+                "class": "mnColumn",
+                "text": ""
+              },
+              "footer": {
+                "name": "logMarkF",
+                "text": ""
+              },
+              "rowHeightAuto": true,
+              "wordwrap": "none"
+            },
+            {
+              "name": "logWhen",
+              "dataSource": "This.when",
+              "dataSourceTypeHint": "text",
+              "width": 124,
+              "enterable": false,
+              "class": "mnCaption",
+              "header": {
+                "name": "logWhenH",
+                "class": "mnColumn",
+                "text": ":xliff:Log_When"
+              },
+              "footer": {
+                "name": "logWhenF",
+                "text": ""
+              },
+              "rowHeightAuto": true,
+              "wordwrap": "none"
+            },
+            {
+              "name": "logAction",
+              "dataSource": "This.action",
+              "dataSourceTypeHint": "text",
+              "width": 120,
+              "enterable": false,
+              "class": "mnHeading",
+              "header": {
+                "name": "logActionH",
+                "class": "mnColumn",
+                "text": ":xliff:Log_Action"
+              },
+              "footer": {
+                "name": "logActionF",
+                "text": ""
+              },
+              "rowHeightAuto": true,
+              "wordwrap": "none"
+            },
+            {
+              "name": "logVessel",
+              "dataSource": "This.vessel",
+              "dataSourceTypeHint": "text",
+              "width": 160,
+              "enterable": false,
+              "class": "mnBody",
+              "header": {
+                "name": "logVesselH",
+                "class": "mnColumn",
+                "text": ":xliff:Log_Vessel"
+              },
+              "footer": {
+                "name": "logVesselF",
+                "text": ""
+              },
+              "rowHeightAuto": true,
+              "wordwrap": "none"
+            },
+            {
+              "name": "logDetail",
+              "dataSource": "This.detail",
+              "dataSourceTypeHint": "text",
+              "width": 362,
+              "enterable": false,
+              "class": "mnSecondary",
+              "header": {
+                "name": "logDetailH",
+                "class": "mnColumn",
+                "text": ":xliff:Log_Detail"
+              },
+              "footer": {
+                "name": "logDetailF",
+                "text": ""
+              },
+              "rowHeightAuto": true,
+              "wordwrap": "normal"
+            }
+          ],
+          "rowHeightAutoMin": "24px",
+          "rowHeightAutoMax": "72px"
+        },
+        "logClear": {
+          "type": "button",
+          "left": 32,
+          "top": 472,
+          "width": 96,
+          "height": 26,
+          "text": ":xliff:Log_Clear",
+          "style": "regular",
+          "method": "ObjectMethods/clear.4dm",
+          "events": [
+            "onClick"
+          ]
+        },
+        "logClose": {
+          "type": "button",
+          "left": 740,
+          "top": 472,
+          "width": 88,
+          "height": 26,
+          "text": ":xliff:CommonClose",
+          "style": "regular",
+          "method": "ObjectMethods/close.4dm",
+          "events": [
+            "onClick"
+          ]
+        }
+      }
+    }
+  ]
+}

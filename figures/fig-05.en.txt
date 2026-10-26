@@ -1,0 +1,17 @@
+Model
+Baltic 67
+Type
+Sloop
+Built
+2016
+Berths
+8
+Operations
+Home port
+Antibes
+Malta
+Flag
+Skipper
+Elena Marchetti
+Status
+In refit

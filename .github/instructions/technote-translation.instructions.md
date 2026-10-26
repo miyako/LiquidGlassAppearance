@@ -48,6 +48,7 @@ pipeline, committed in the repository). `<src>` is `source_lang` (normally `en`)
 | `bullets.fonts` / `strip_fonts` / `glyphs` | Glyph fonts that mark list items / fonts of separator spans to drop / marker characters set in the body font (default `•`, `◦`, `▪`) |
 | `caption.italic`, `caption.min_x` | Captions are italic lines starting right of `min_x` |
 | `caption.pattern` | Regex searched in the line. With `italic: true` a matching line is a caption even if not italic; with `italic: false` only matching lines are captions (e.g. `"^Figure \\d"`) |
+| `caption.fonts` | Font-name substrings: a line set entirely in one of them is a caption (e.g. `["TimesNewRomanPS-Bold"]` when Word captions use a distinct font). Consecutive caption lines are joined |
 | `caption.max_size` | Lines with text larger than this (pt) are never captions (null: any size) |
 | `quote.italic` | `true`: fully italic lines that are not captions become `>` blockquotes (notes, quoted user input). `callout.italic` is an alias |
 | `figure.min_width_pt` | Images narrower than this (inline icons) are not extracted as figures |

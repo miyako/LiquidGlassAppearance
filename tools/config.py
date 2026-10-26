@@ -28,7 +28,8 @@ DEFAULTS = {
     # glyphs: a line whose text is one of these is a list marker (bullet set in the body font)
     "bullets": {"fonts": ["SymbolMT", "Wingdings-Regular"], "strip_fonts": ["ArialMT"], "glyphs": ["•", "◦", "▪"]},
     # pattern: regex (searched in the stripped line) that marks captions; max_size: captions are at most this size
-    "caption": {"italic": True, "min_x": 0, "pattern": None, "max_size": None},
+    # fonts: font-name substrings; a line set entirely in one of them is a caption
+    "caption": {"italic": True, "min_x": 0, "pattern": None, "max_size": None, "fonts": []},
     "quote": {"italic": False},     # true: all-italic lines that are not captions become > blockquotes ("callout" = alias)
     "figure": {"min_width_pt": 0},  # narrower images (inline icons) are ignored
     "vector_figures": [],           # [{"page": N, "clip": [x0, y0, x1, y1], "dpi": 300}]: rasterise vector diagrams

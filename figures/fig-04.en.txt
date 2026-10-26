@@ -1,0 +1,115 @@
+Meridian
+Fleet register
+New Charter
+Name, model, harbour, flag
+13 vessels of 13 in fleet
+Argonaut *
+• Fleet register
+13
+Vessel
+Model
+Harbour
+Flag
+Rate / night
+Status
+Argonaut *
+Baltic 67
+Antibes
+Malta
+€ 5 600 In refit
+• Charters
+Model
+Baltic 67
+Blue Aria *
+Riva Rivamare 39
+Portofino
+Italy
+€ 5 200 On charter
+• Desk
+Calliope
+Nautor Swan 48
+Hvar
+Malta
+€ 1 100 Laid up
+Type
+Sloop
+• Laid up
+United Kingdom
+€ 4 100 Turnaround
+Isolde
+Princess V50
+Cannes
+Built
+2016
+Kalinda
+Amel Super Maramu
+Corfu
+Greece
+€ 1 400 In refit
+season
+Levante *
+Nautor Swan 54
+Antibes
+Malta
+€ 2 900 Available
+Berths
+Meltemi
+Beneteau Oceanis 51.1
+Bodrum
+Turkey
+€ 1900 Available
+46%
+Operations
+O Northlight
+6 of 13 vessels committed
+Hallberg-Rassy 44
+Palma
+Sweden
+€ 1600 Turnaround
+Palmyra *
+Custom Gulet 32m
+€ 4 800 Available
+Home port
+Antibes
+Bodrum
+Turkey
+€ 18 200
+Perle Noire *
+Wallytender 48
+Saint-Tropez
+France
+€ 6 900 On charter
+Flag
+Malta
+across 4 vessels under way
+Sirocco
+Lagoon 46
+Palma
+Spain
+€ 3 400 On charter
+Tramontane
+Beneteau First 36
+Hvar
+Croatia
+€ 900 Available
+Skipper
+Elena Marchetti
+Zephyros
+Lagoon 42
+Corfu
+Greece
+€ 2 700 On charter
+Status
+• In refit
+Rate
+Per night
+€ 5600
+€ 39 200
+Per week
+Notes
+Carbon rig inspection after the Giraglia;
+expect two weeks at Composite Works.
+Add Vessel
+Edit Vessel
+Delete
+Fleet as MN_Fleet wrote it

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Main" source-language="en" target-language="en">
+    <body>
+      <trans-unit id="Main_NewCharter" resname="Main_NewCharter">
+        <source>New Charter</source>
+        <target>New Charter</target>
+      </trans-unit>
+      <trans-unit id="Main_NewCharterTip" resname="Main_NewCharterTip">
+        <source>Put the selected vessel on charter</source>
+        <target>Put the selected vessel on charter</target>
+      </trans-unit>
+      <trans-unit id="Main_SearchPlaceholder" resname="Main_SearchPlaceholder">
+        <source>Name, model, harbour, flag</source>
+        <target>Name, model, harbour, flag</target>
+      </trans-unit>
+      <trans-unit id="Main_Season" resname="Main_Season">
+        <source>Season</source>
+        <target>Season</target>
+      </trans-unit>
+      <trans-unit id="Main_UtilLabel" resname="Main_UtilLabel">
+        <source>FLEET UTILISATION</source>
+        <target>FLEET UTILISATION</target>
+      </trans-unit>
+      <trans-unit id="Main_CommittedLabel" resname="Main_CommittedLabel">
+        <source>COMMITTED TONIGHT</source>
+        <target>COMMITTED TONIGHT</target>
+      </trans-unit>
+      <trans-unit id="Main_Model" resname="Main_Model">
+        <source>Model</source>
+        <target>Model</target>
+      </trans-unit>
+      <trans-unit id="Main_Type" resname="Main_Type">
+        <source>Type</source>
+        <target>Type</target>
+      </trans-unit>
+      <trans-unit id="Main_Built" resname="Main_Built">
+        <source>Built</source>
+        <target>Built</target>
+      </trans-unit>
+      <trans-unit id="Main_Berths" resname="Main_Berths">
+        <source>Berths</source>
+        <target>Berths</target>
+      </trans-unit>
+      <trans-unit id="Main_Operations" resname="Main_Operations">
+        <source>Operations</source>
+        <target>Operations</target>
+      </trans-unit>
+      <trans-unit id="Main_HomePort" resname="Main_HomePort">
+        <source>Home port</source>
+        <target>Home port</target>
+      </trans-unit>
+      <trans-unit id="Main_Flag" resname="Main_Flag">
+        <source>Flag</source>
+        <target>Flag</target>
+      </trans-unit>
+      <trans-unit id="Main_Skipper" resname="Main_Skipper">
+        <source>Skipper</source>
+        <target>Skipper</target>
+      </trans-unit>
+      <trans-unit id="Main_Status" resname="Main_Status">
+        <source>Status</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="Main_Rate" resname="Main_Rate">
+        <source>Rate</source>
+        <target>Rate</target>
+      </trans-unit>
+      <trans-unit id="Main_PerNight" resname="Main_PerNight">
+        <source>Per night</source>
+        <target>Per night</target>
+      </trans-unit>
+      <trans-unit id="Main_PerWeek" resname="Main_PerWeek">
+        <source>Per week</source>
+        <target>Per week</target>
+      </trans-unit>
+      <trans-unit id="Main_Notes" resname="Main_Notes">
+        <source>Notes</source>
+        <target>Notes</target>
+      </trans-unit>
+      <trans-unit id="Main_AddVessel" resname="Main_AddVessel">
+        <source>Add Vessel</source>
+        <target>Add Vessel</target>
+      </trans-unit>
+      <trans-unit id="Main_EditVessel" resname="Main_EditVessel">
+        <source>Edit Vessel</source>
+        <target>Edit Vessel</target>
+      </trans-unit>
+      <trans-unit id="Main_Delete" resname="Main_Delete">
+        <source>Delete</source>
+        <target>Delete</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
