@@ -43,13 +43,65 @@ narrative term. Narrative choices do not establish authoritative UI translations
 | component | コンポーネント | |
 | standalone | シングルユーザー版 | Editor's narrative term for the 4D product edition, not standalone method execution. |
 | Code Editor | メソッドエディター | Editor's narrative term; quoted or screenshot UI must use resource-verified wording. |
+| form style sheet | フォームのスタイルシート | 4D docs: スタイルシート |
+| media feature | メディア特性 | 4D docs use both メディア特性 and メディア機能 |
+| media query | メディアクエリ | |
+| form theme | フォームテーマ | Unverified: 4D docs mostly say テーマ / プラットフォームテーマ |
+| light / dark appearance | ライトモード / ダークモード | "appearance" alone: 外観 |
+| form description file | フォーム定義ファイル | form.4DForm |
+| form editor | フォームエディター | |
+| form event | フォームイベント | |
+| project mode | プロジェクトモード | |
+| list box column / header / footer | リストボックスの列 / ヘッダー / フッター | |
+| collection list box | コレクションリストボックス | |
+| input (object) | 入力オブジェクト | |
+| rectangle | 四角 | 4D form object name |
+| picture object / static picture | ピクチャーオブジェクト / スタティックピクチャー | |
+| form expression | フォーム式 | |
+| data source | データソース | |
+| bind / binding | バインドする / バインド | |
+| dependency | 依存関係 | |
+| feature release | フィーチャーリリース | 21 Rx |
+| form method | フォームメソッド | |
 
 ## Document-specific terms
 
 | English | 日本語 | Notes |
 |---|---|---|
+| Rendering the macOS Liquid Glass Appearance in 4D | 4DでmacOSのLiquid Glassの外観を再現する | Cover title (approved) |
+| Quality Support Engineer | 品質サポートエンジニア | Byline role |
+| Liquid Glass | Liquid Glass | Apple design name, untranslated |
+| translucent / translucency | 半透明 | |
+| material | マテリアル | |
+| tint | ティント | |
+| alpha | アルファ | |
+| specular edge / specular rim | 鏡面ハイライトの縁 | |
+| refraction / refract | 屈折 / 屈折させる | |
+| blur / Gaussian blur | ぼかし / ガウスぼかし | |
+| color matrix | カラーマトリクス | |
+| filter primitive | フィルタープリミティブ | SVG term |
+| saturation / contrast | 彩度 / コントラスト | |
+| luma | 輝度 | |
+| pivot (tone) | ピボット（トーン） | |
+| fraction | 割合 | interpolation parameter |
+| linear interpolation | 線形補間 | |
+| rung (chrome / glass / hairline) | 段階 | rung names kept in English (identifiers) |
+| surface | サーフェス | |
+| panel / pane | パネル / ペイン | |
+| sidebar / inspector | サイドバー / インスペクター | |
+| register (list of vessels) | 一覧 | |
+| unified title bar | 統合タイトルバー | |
+| window chrome | ウィンドウのクローム | |
+| accent color | アクセントカラー | macOS |
+| selection highlight | 選択ハイライト | |
+| tertiary label color | 第3レベルのラベルカラー | macOS tertiaryLabelColor |
+| operator | オペレーター | end user of the window |
+| contour | 等高線 | background artwork |
+| canvas | キャンバス | fig-03 |
 
 ## Proper nouns in examples
 
 | English | 日本語 | Notes |
 |---|---|---|
+| Tahoe / Golden Gate | Tahoe / Golden Gate | macOS 26 / 27 names, untranslated |
+| Meridian, vessel and harbour names | (unchanged for now) | Demo data, to be localised in Phase 4 |
