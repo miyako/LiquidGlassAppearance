@@ -104,4 +104,29 @@ narrative term. Narrative choices do not establish authoritative UI translations
 | English | 日本語 | Notes |
 |---|---|---|
 | Tahoe / Golden Gate | Tahoe / Golden Gate | macOS 26 / 27 names, untranslated |
-| Meridian, vessel and harbour names | (unchanged for now) | Demo data, to be localised in Phase 4 |
+| Meridian | Meridian | Demo app brand, untranslated |
+| Yacht names and models (Levante, Nautor Swan 54 …) | unchanged | Demo data (approved) |
+| Hayama / Yokohama / Atami / Ginowan / Ishigaki / Aburatsubo / Ushimado / Gamagori | 葉山 / 横浜 / 熱海 / 宜野湾 / 石垣 / 油壺 / 牛窓 / 蒲郡 | Demo harbours (`harbor` / `harborJa`) |
+| Eri Nakamura / Daisuke Fujita / Isamu Kinjo / Eiji Asato / Kaori Kobayashi / Makoto Arakaki | 中村 恵理 / 藤田 大輔 / 金城 勇 / 安里 英二 / 小林 かおり / 新垣 誠 | Demo skippers (`skipper` / `skipperJa`) |
+| Hatsushima / Pearl Race | 初島 / パールレース | Demo notes |
+
+## Demo UI terms
+
+Source of truth: `demo/LiquidGlassAppearance/Resources/ja.lproj/*.xlf`.
+
+| English | 日本語 | Notes |
+|---|---|---|
+| vessel | 艇 | counter: 〜艇 |
+| fleet / fleet register | 船団 / 船団一覧 | launcher: チャーター船団台帳 |
+| Charters / Desk / Laid up (sections) | チャーター / デスク / 休航 | |
+| Available / On charter / Turnaround / In refit / Laid up (status) | 空き / チャーター中 / 準備中 / 改装中 / 休航中 | stored keys stay English |
+| Sloop / Catamaran / Motor / Ketch / Gulet (type) | スループ / カタマラン / モーターヨット / ケッチ / ギュレット | stored keys stay English |
+| Bareboat (skipper) | ベアボート | stored key stays English |
+| Home port / Harbour | 母港 | |
+| Flag | 船籍 | |
+| Berths | バース数 | |
+| Built | 建造年 | |
+| Rate / night, Per night, Per week | 1泊料金, 1泊, 1週間 | amounts: `¥` + comma grouping in both UIs |
+| FLEET UTILISATION / COMMITTED TONIGHT | 船団稼働率 / 今夜の確定額 | |
+| Activity (log) | アクティビティ | |
+| Flagship | フラッグシップ | |
